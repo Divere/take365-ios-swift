@@ -1,0 +1,773 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 48;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		4DF440E22050485600666471 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DF440E12050485600666471 /* AppDelegate.swift */; };
+		4DF440E42050485600666471 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DF440E32050485600666471 /* ViewController.swift */; };
+		4DF440E92050485600666471 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4DF440E82050485600666471 /* Assets.xcassets */; };
+		4DF440F72050485600666471 /* take365_swiftTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DF440F62050485600666471 /* take365_swiftTests.swift */; };
+		4DF441022050485600666471 /* take365_swiftUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DF441012050485600666471 /* take365_swiftUITests.swift */; };
+		4DF44113205048EA00666471 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4DF44111205048EA00666471 /* LaunchScreen.storyboard */; };
+		4DF44114205048EA00666471 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4DF44112205048EA00666471 /* Main.storyboard */; };
+		4DF4411620504B0800666471 /* InitialViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DF4411520504B0800666471 /* InitialViewController.swift */; };
+		4DF4411820504BBF00666471 /* Take365ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DF4411720504BBF00666471 /* Take365ViewController.swift */; };
+		4DF4411A20504DAF00666471 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DF4411920504DAF00666471 /* LoginViewController.swift */; };
+		68ECBD426F2E9FC9F4C36F8C /* Pods_take365_swift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CF85A8CE467AC44D244BEA68 /* Pods_take365_swift.framework */; };
+		6A7211BCE66AF207023B8D31 /* Pods_take365_swiftUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 26AC77E6ACFF66ECF7736878 /* Pods_take365_swiftUITests.framework */; };
+		85CBC89F53C15A75F13EBE93 /* Pods_take365_swiftTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 774827A0684CE421024B1A45 /* Pods_take365_swiftTests.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		4DF440F32050485600666471 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 4DF440D62050485600666471 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 4DF440DD2050485600666471;
+			remoteInfo = "take365-swift";
+		};
+		4DF440FE2050485600666471 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 4DF440D62050485600666471 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 4DF440DD2050485600666471;
+			remoteInfo = "take365-swift";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		26AC77E6ACFF66ECF7736878 /* Pods_take365_swiftUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_take365_swiftUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		2CDC576267D9CF028D3A38D4 /* Pods-take365-swift.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-take365-swift.release.xcconfig"; path = "Pods/Target Support Files/Pods-take365-swift/Pods-take365-swift.release.xcconfig"; sourceTree = "<group>"; };
+		4897FA982FB812D16EFD0B59 /* Pods-take365-swiftTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-take365-swiftTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-take365-swiftTests/Pods-take365-swiftTests.release.xcconfig"; sourceTree = "<group>"; };
+		4DF440DE2050485600666471 /* take365-swift.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "take365-swift.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		4DF440E12050485600666471 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		4DF440E32050485600666471 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		4DF440E82050485600666471 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		4DF440ED2050485600666471 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4DF440F22050485600666471 /* take365-swiftTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "take365-swiftTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		4DF440F62050485600666471 /* take365_swiftTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = take365_swiftTests.swift; sourceTree = "<group>"; };
+		4DF440F82050485600666471 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4DF440FD2050485600666471 /* take365-swiftUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "take365-swiftUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		4DF441012050485600666471 /* take365_swiftUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = take365_swiftUITests.swift; sourceTree = "<group>"; };
+		4DF441032050485600666471 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4DF44111205048EA00666471 /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
+		4DF44112205048EA00666471 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
+		4DF4411520504B0800666471 /* InitialViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InitialViewController.swift; sourceTree = "<group>"; };
+		4DF4411720504BBF00666471 /* Take365ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Take365ViewController.swift; sourceTree = "<group>"; };
+		4DF4411920504DAF00666471 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		6BAE589D004DA5EF47A4189A /* Pods-take365-swiftTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-take365-swiftTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-take365-swiftTests/Pods-take365-swiftTests.debug.xcconfig"; sourceTree = "<group>"; };
+		774827A0684CE421024B1A45 /* Pods_take365_swiftTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_take365_swiftTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		A0A3C43AA65444AFCA4FA4A0 /* Pods-take365-swiftUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-take365-swiftUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-take365-swiftUITests/Pods-take365-swiftUITests.release.xcconfig"; sourceTree = "<group>"; };
+		B3C7EEA37B830D2016040B0B /* Pods-take365-swift.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-take365-swift.debug.xcconfig"; path = "Pods/Target Support Files/Pods-take365-swift/Pods-take365-swift.debug.xcconfig"; sourceTree = "<group>"; };
+		CF85A8CE467AC44D244BEA68 /* Pods_take365_swift.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_take365_swift.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F604F43D5A7B33A3640BFBDE /* Pods-take365-swiftUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-take365-swiftUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-take365-swiftUITests/Pods-take365-swiftUITests.debug.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		4DF440DB2050485600666471 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				68ECBD426F2E9FC9F4C36F8C /* Pods_take365_swift.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4DF440EF2050485600666471 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				85CBC89F53C15A75F13EBE93 /* Pods_take365_swiftTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4DF440FA2050485600666471 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6A7211BCE66AF207023B8D31 /* Pods_take365_swiftUITests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		41D13D88D9961A1DBADE3867 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				B3C7EEA37B830D2016040B0B /* Pods-take365-swift.debug.xcconfig */,
+				2CDC576267D9CF028D3A38D4 /* Pods-take365-swift.release.xcconfig */,
+				6BAE589D004DA5EF47A4189A /* Pods-take365-swiftTests.debug.xcconfig */,
+				4897FA982FB812D16EFD0B59 /* Pods-take365-swiftTests.release.xcconfig */,
+				F604F43D5A7B33A3640BFBDE /* Pods-take365-swiftUITests.debug.xcconfig */,
+				A0A3C43AA65444AFCA4FA4A0 /* Pods-take365-swiftUITests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		4DF440D52050485600666471 = {
+			isa = PBXGroup;
+			children = (
+				4DF440E02050485600666471 /* take365-swift */,
+				4DF440F52050485600666471 /* take365-swiftTests */,
+				4DF441002050485600666471 /* take365-swiftUITests */,
+				4DF440DF2050485600666471 /* Products */,
+				41D13D88D9961A1DBADE3867 /* Pods */,
+				7C9F5C574A267FEC161324F3 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		4DF440DF2050485600666471 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				4DF440DE2050485600666471 /* take365-swift.app */,
+				4DF440F22050485600666471 /* take365-swiftTests.xctest */,
+				4DF440FD2050485600666471 /* take365-swiftUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		4DF440E02050485600666471 /* take365-swift */ = {
+			isa = PBXGroup;
+			children = (
+				4DF44110205048BE00666471 /* Storyboards */,
+				4DF4410F205048B400666471 /* Controllers */,
+				4DF440E12050485600666471 /* AppDelegate.swift */,
+				4DF440E32050485600666471 /* ViewController.swift */,
+				4DF440E82050485600666471 /* Assets.xcassets */,
+				4DF440ED2050485600666471 /* Info.plist */,
+			);
+			path = "take365-swift";
+			sourceTree = "<group>";
+		};
+		4DF440F52050485600666471 /* take365-swiftTests */ = {
+			isa = PBXGroup;
+			children = (
+				4DF440F62050485600666471 /* take365_swiftTests.swift */,
+				4DF440F82050485600666471 /* Info.plist */,
+			);
+			path = "take365-swiftTests";
+			sourceTree = "<group>";
+		};
+		4DF441002050485600666471 /* take365-swiftUITests */ = {
+			isa = PBXGroup;
+			children = (
+				4DF441012050485600666471 /* take365_swiftUITests.swift */,
+				4DF441032050485600666471 /* Info.plist */,
+			);
+			path = "take365-swiftUITests";
+			sourceTree = "<group>";
+		};
+		4DF4410F205048B400666471 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				4DF4411520504B0800666471 /* InitialViewController.swift */,
+				4DF4411720504BBF00666471 /* Take365ViewController.swift */,
+				4DF4411920504DAF00666471 /* LoginViewController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		4DF44110205048BE00666471 /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				4DF44111205048EA00666471 /* LaunchScreen.storyboard */,
+				4DF44112205048EA00666471 /* Main.storyboard */,
+			);
+			path = Storyboards;
+			sourceTree = "<group>";
+		};
+		7C9F5C574A267FEC161324F3 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				CF85A8CE467AC44D244BEA68 /* Pods_take365_swift.framework */,
+				774827A0684CE421024B1A45 /* Pods_take365_swiftTests.framework */,
+				26AC77E6ACFF66ECF7736878 /* Pods_take365_swiftUITests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		4DF440DD2050485600666471 /* take365-swift */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4DF441062050485600666471 /* Build configuration list for PBXNativeTarget "take365-swift" */;
+			buildPhases = (
+				4A8A2351C05BD332C5CC37A9 /* [CP] Check Pods Manifest.lock */,
+				4DF440DA2050485600666471 /* Sources */,
+				4DF440DB2050485600666471 /* Frameworks */,
+				4DF440DC2050485600666471 /* Resources */,
+				0FF9C0A8EFEB0E84A4042B91 /* [CP] Embed Pods Frameworks */,
+				9DC22642C0C00B335AC80AA4 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "take365-swift";
+			productName = "take365-swift";
+			productReference = 4DF440DE2050485600666471 /* take365-swift.app */;
+			productType = "com.apple.product-type.application";
+		};
+		4DF440F12050485600666471 /* take365-swiftTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4DF441092050485600666471 /* Build configuration list for PBXNativeTarget "take365-swiftTests" */;
+			buildPhases = (
+				4C2F02FF2F06B9D15D6D1796 /* [CP] Check Pods Manifest.lock */,
+				4DF440EE2050485600666471 /* Sources */,
+				4DF440EF2050485600666471 /* Frameworks */,
+				4DF440F02050485600666471 /* Resources */,
+				3452EF011F69A2B4F851D403 /* [CP] Embed Pods Frameworks */,
+				997BD1315D42086895889471 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				4DF440F42050485600666471 /* PBXTargetDependency */,
+			);
+			name = "take365-swiftTests";
+			productName = "take365-swiftTests";
+			productReference = 4DF440F22050485600666471 /* take365-swiftTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		4DF440FC2050485600666471 /* take365-swiftUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4DF4410C2050485600666471 /* Build configuration list for PBXNativeTarget "take365-swiftUITests" */;
+			buildPhases = (
+				34981E2AD620E9D1F2925A37 /* [CP] Check Pods Manifest.lock */,
+				4DF440F92050485600666471 /* Sources */,
+				4DF440FA2050485600666471 /* Frameworks */,
+				4DF440FB2050485600666471 /* Resources */,
+				C83F977F22B29B1AA735F4B9 /* [CP] Embed Pods Frameworks */,
+				6B7A3156AFB6676FA9602542 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				4DF440FF2050485600666471 /* PBXTargetDependency */,
+			);
+			name = "take365-swiftUITests";
+			productName = "take365-swiftUITests";
+			productReference = 4DF440FD2050485600666471 /* take365-swiftUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		4DF440D62050485600666471 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0920;
+				LastUpgradeCheck = 0920;
+				ORGANIZATIONNAME = "Evgeniy Eliseev";
+				TargetAttributes = {
+					4DF440DD2050485600666471 = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+					};
+					4DF440F12050485600666471 = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 4DF440DD2050485600666471;
+					};
+					4DF440FC2050485600666471 = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 4DF440DD2050485600666471;
+					};
+				};
+			};
+			buildConfigurationList = 4DF440D92050485600666471 /* Build configuration list for PBXProject "take365-swift" */;
+			compatibilityVersion = "Xcode 8.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 4DF440D52050485600666471;
+			productRefGroup = 4DF440DF2050485600666471 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				4DF440DD2050485600666471 /* take365-swift */,
+				4DF440F12050485600666471 /* take365-swiftTests */,
+				4DF440FC2050485600666471 /* take365-swiftUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		4DF440DC2050485600666471 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4DF44114205048EA00666471 /* Main.storyboard in Resources */,
+				4DF44113205048EA00666471 /* LaunchScreen.storyboard in Resources */,
+				4DF440E92050485600666471 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4DF440F02050485600666471 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4DF440FB2050485600666471 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		0FF9C0A8EFEB0E84A4042B91 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-take365-swift/Pods-take365-swift-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/RSRoundBorderedButton/RSRoundBorderedButton.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RSRoundBorderedButton.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-take365-swift/Pods-take365-swift-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		3452EF011F69A2B4F851D403 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-take365-swiftTests/Pods-take365-swiftTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		34981E2AD620E9D1F2925A37 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-take365-swiftUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		4A8A2351C05BD332C5CC37A9 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-take365-swift-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		4C2F02FF2F06B9D15D6D1796 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-take365-swiftTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		6B7A3156AFB6676FA9602542 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-take365-swiftUITests/Pods-take365-swiftUITests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		997BD1315D42086895889471 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-take365-swiftTests/Pods-take365-swiftTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		9DC22642C0C00B335AC80AA4 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-take365-swift/Pods-take365-swift-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C83F977F22B29B1AA735F4B9 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-take365-swiftUITests/Pods-take365-swiftUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		4DF440DA2050485600666471 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4DF4411820504BBF00666471 /* Take365ViewController.swift in Sources */,
+				4DF4411620504B0800666471 /* InitialViewController.swift in Sources */,
+				4DF440E42050485600666471 /* ViewController.swift in Sources */,
+				4DF4411A20504DAF00666471 /* LoginViewController.swift in Sources */,
+				4DF440E22050485600666471 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4DF440EE2050485600666471 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4DF440F72050485600666471 /* take365_swiftTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4DF440F92050485600666471 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4DF441022050485600666471 /* take365_swiftUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		4DF440F42050485600666471 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 4DF440DD2050485600666471 /* take365-swift */;
+			targetProxy = 4DF440F32050485600666471 /* PBXContainerItemProxy */;
+		};
+		4DF440FF2050485600666471 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 4DF440DD2050485600666471 /* take365-swift */;
+			targetProxy = 4DF440FE2050485600666471 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		4DF441042050485600666471 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		4DF441052050485600666471 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		4DF441072050485600666471 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = B3C7EEA37B830D2016040B0B /* Pods-take365-swift.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 64252YGWN9;
+				INFOPLIST_FILE = "take365-swift/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.take365.take365-swift";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		4DF441082050485600666471 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2CDC576267D9CF028D3A38D4 /* Pods-take365-swift.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 64252YGWN9;
+				INFOPLIST_FILE = "take365-swift/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.take365.take365-swift";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		4DF4410A2050485600666471 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6BAE589D004DA5EF47A4189A /* Pods-take365-swiftTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "take365-swiftTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.take365.take365-swiftTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/take365-swift.app/take365-swift";
+			};
+			name = Debug;
+		};
+		4DF4410B2050485600666471 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4897FA982FB812D16EFD0B59 /* Pods-take365-swiftTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "take365-swiftTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.take365.take365-swiftTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/take365-swift.app/take365-swift";
+			};
+			name = Release;
+		};
+		4DF4410D2050485600666471 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F604F43D5A7B33A3640BFBDE /* Pods-take365-swiftUITests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "take365-swiftUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.take365.take365-swiftUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "take365-swift";
+			};
+			name = Debug;
+		};
+		4DF4410E2050485600666471 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = A0A3C43AA65444AFCA4FA4A0 /* Pods-take365-swiftUITests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "take365-swiftUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.take365.take365-swiftUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "take365-swift";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		4DF440D92050485600666471 /* Build configuration list for PBXProject "take365-swift" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4DF441042050485600666471 /* Debug */,
+				4DF441052050485600666471 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4DF441062050485600666471 /* Build configuration list for PBXNativeTarget "take365-swift" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4DF441072050485600666471 /* Debug */,
+				4DF441082050485600666471 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4DF441092050485600666471 /* Build configuration list for PBXNativeTarget "take365-swiftTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4DF4410A2050485600666471 /* Debug */,
+				4DF4410B2050485600666471 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4DF4410C2050485600666471 /* Build configuration list for PBXNativeTarget "take365-swiftUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4DF4410D2050485600666471 /* Debug */,
+				4DF4410E2050485600666471 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 4DF440D62050485600666471 /* Project object */;
+}

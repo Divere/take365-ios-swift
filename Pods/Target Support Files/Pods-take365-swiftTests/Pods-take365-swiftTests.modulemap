@@ -1,0 +1,6 @@
+framework module Pods_take365_swiftTests {
+  umbrella header "Pods-take365-swiftTests-umbrella.h"
+
+  export *
+  module * { export * }
+}

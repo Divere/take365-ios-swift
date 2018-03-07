@@ -1,0 +1,6 @@
+framework module Pods_take365_swift {
+  umbrella header "Pods-take365-swift-umbrella.h"
+
+  export *
+  module * { export * }
+}
