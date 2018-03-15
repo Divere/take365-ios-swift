@@ -19,5 +19,14 @@ class LoginViewController: Take365ViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         self.navigationController?.setNavigationBarHidden(true, animated: false)
+        
+//        btnSignIn.layer.borderWidth = 1.0
+//        btnSignIn.layer.borderColor = btnSignIn.tintColor.cgColor
+//        btnSignIn.layer.cornerRadius = 5.0
+//        btnSignIn.clipsToBounds = true
+//        btnSignIn.contentEdgeInsets = UIEdgeInsets(top: 8, left: 8, bottom: 8, right: 8)
+//        btnSignIn.setTitleColor(btnSignIn.tintColor, for: UIControlState.normal)
+//        btnSignIn.setTitleColor(UIColor.white, for: UIControlState.highlighted)
+//        btnSignIn.setBackgroundImage(UIImage.imageFromColor(btnSignIn.tintColor), for: UIControlState.highlighted)
     }
 }

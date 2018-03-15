@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4D536A4F205B3233000C8D23 /* UIImage+Color.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D536A4E205B3233000C8D23 /* UIImage+Color.swift */; };
 		4DF440E22050485600666471 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DF440E12050485600666471 /* AppDelegate.swift */; };
 		4DF440E42050485600666471 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DF440E32050485600666471 /* ViewController.swift */; };
 		4DF440E92050485600666471 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4DF440E82050485600666471 /* Assets.xcassets */; };
@@ -43,6 +44,7 @@
 		26AC77E6ACFF66ECF7736878 /* Pods_take365_swiftUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_take365_swiftUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		2CDC576267D9CF028D3A38D4 /* Pods-take365-swift.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-take365-swift.release.xcconfig"; path = "Pods/Target Support Files/Pods-take365-swift/Pods-take365-swift.release.xcconfig"; sourceTree = "<group>"; };
 		4897FA982FB812D16EFD0B59 /* Pods-take365-swiftTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-take365-swiftTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-take365-swiftTests/Pods-take365-swiftTests.release.xcconfig"; sourceTree = "<group>"; };
+		4D536A4E205B3233000C8D23 /* UIImage+Color.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImage+Color.swift"; sourceTree = "<group>"; };
 		4DF440DE2050485600666471 /* take365-swift.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "take365-swift.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		4DF440E12050485600666471 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		4DF440E32050485600666471 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -108,6 +110,14 @@
 			name = Pods;
 			sourceTree = "<group>";
 		};
+		4D536A4D205B321E000C8D23 /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				4D536A4E205B3233000C8D23 /* UIImage+Color.swift */,
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
 		4DF440D52050485600666471 = {
 			isa = PBXGroup;
 			children = (
@@ -133,6 +143,7 @@
 		4DF440E02050485600666471 /* take365-swift */ = {
 			isa = PBXGroup;
 			children = (
+				4D536A4D205B321E000C8D23 /* Components */,
 				4DF44110205048BE00666471 /* Storyboards */,
 				4DF4410F205048B400666471 /* Controllers */,
 				4DF440E12050485600666471 /* AppDelegate.swift */,
@@ -488,6 +499,7 @@
 				4DF440E42050485600666471 /* ViewController.swift in Sources */,
 				4DF4411A20504DAF00666471 /* LoginViewController.swift in Sources */,
 				4DF440E22050485600666471 /* AppDelegate.swift in Sources */,
+				4D536A4F205B3233000C8D23 /* UIImage+Color.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
