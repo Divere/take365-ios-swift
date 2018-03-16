@@ -9,7 +9,7 @@
 import Foundation
 import UIKit
 
-class Take365ViewController: UIViewController, UITextFieldDelegate {
+class Take365ViewController: UIViewController {
     
     let maTextFields = NSMutableArray()
     var currentMovement: CGFloat = 0
@@ -24,18 +24,9 @@ class Take365ViewController: UIViewController, UITextFieldDelegate {
                 applyBorderLessStyle(tf: tf, color: UIColor.black)
                 tf.delegate = self
                 maTextFields.add(tf)
+                tf.addTarget(self, action: #selector(self.textFieldDidChanged(_:)), for: UIControlEvents.editingChanged)
             }
         }
-    }
-    
-    func textFieldDidBeginEditing(_ textField: UITextField) {
-        applyBorderLessStyle(tf: textField, color: UIColor.red)
-        moveUpViewForKeyboard(tf: textField)
-    }
-    
-    func textFieldDidEndEditing(_ textField: UITextField) {
-        applyBorderLessStyle(tf: textField, color: UIColor.black)
-        moveViewDown()
     }
     
     override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
@@ -78,3 +69,43 @@ class Take365ViewController: UIViewController, UITextFieldDelegate {
         tf.layer.addSublayer(bottomBorder)
     }
 }
+
+extension Take365ViewController: UITextFieldDelegate {
+    @objc func textFieldDidChanged(_ textField: UITextField) {
+        clearButtonAdjustmentWith(textField)
+    }
+    
+    func textFieldShouldBeginEditing(_ textField: UITextField) -> Bool {
+        clearButtonAdjustmentWith(textField)
+        return true
+    }
+    
+    func textFieldDidBeginEditing(_ textField: UITextField) {
+        clearButtonAdjustmentWith(textField)
+        applyBorderLessStyle(tf: textField, color: UIColor.red)
+        moveUpViewForKeyboard(tf: textField)
+    }
+    
+    func textFieldDidEndEditing(_ textField: UITextField) {
+        clearButtonAdjustmentWith(textField)
+        applyBorderLessStyle(tf: textField, color: UIColor.black)
+        moveViewDown()
+    }
+    
+    private func clearButtonAdjustmentWith(_ textField: UITextField) {
+        guard textField.textContentType == UITextContentType.password else {
+            return
+        }
+        
+        guard let text = textField.text else {
+            return
+        }
+        
+        if text.count == 0 {
+            textField.clearButtonMode = UITextFieldViewMode.never
+        } else {
+            textField.clearButtonMode = UITextFieldViewMode.always
+        }
+    }
+}
+
