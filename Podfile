@@ -4,8 +4,12 @@
 target 'take365-swift' do
   # Comment the next line if you're not using Swift and don't want to use dynamic frameworks
   use_frameworks!
-  
+    
   # Pods for take365-swift
+
+  pod "SimpleRoundedButton"
+  pod 'Alamofire', '~> 5.0.0-rc.3'
+  pod 'JVFloatLabeledTextField'
 
   target 'take365-swiftTests' do
     inherit! :search_paths

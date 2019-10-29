@@ -7,355 +7,715 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		233A2DBA461AA2F25F729D1CC05380DE /* Pods-take365-swiftTests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = A4C5FAF4AEF91200BD9368878676C8BB /* Pods-take365-swiftTests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		458D51554728BE47E6E6F0EE954E5D10 /* Pods-take365-swift-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = C41FB34509B635317DC560019743220B /* Pods-take365-swift-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		6EBAB2BE7397D999EA09C3ABE002FC95 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */; };
-		723FD9920C4AA78897A9ECA5EA232CA8 /* Pods-take365-swiftUITests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = FCD2527766195CD744AD7CB674AF35D4 /* Pods-take365-swiftUITests-dummy.m */; };
-		78470C183806963506C8E92F191CB223 /* Pods-take365-swift-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 97C93809CF8CAF993BE1A4B51758954C /* Pods-take365-swift-dummy.m */; };
-		938BCC96E29ABE454362281F942A00EF /* Pods-take365-swiftTests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 96FBC68E946A76A9D66178FEFD294972 /* Pods-take365-swiftTests-dummy.m */; };
-		93FC06F0E2589B9F16BE41BE978241BD /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */; };
-		9439366653FC29CF50CB47E91021B664 /* Pods-take365-swiftUITests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 10F7263E8DA46A437BFE40D27A777C7C /* Pods-take365-swiftUITests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		A294135EE43258276D1948711C63F50F /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */; };
+		00FA97D56201027AEB1C7692A2C3CF8B /* Alamofire-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 0D1CDB834377F4E7CAD8D563FC1FABE2 /* Alamofire-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		0419772A87B16DB7DCF405A9E77D671F /* Protector.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0241EF4C7996B42656966A4862FE1410 /* Protector.swift */; };
+		05EFC33EB8028E53E26F44DF3DA7AF76 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 222DAEF0D819F359AFCFF3D4F927E8A7 /* Foundation.framework */; };
+		06507A26118BA5ACFBBC8C225776920E /* Validation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6AB0C54759412AB96ABFCB935BC7A9CC /* Validation.swift */; };
+		0AE06C3AEA6CA45342BA703230ABD2CB /* CachedResponseHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E1974AF939EA1D7877F7DBC3A33FBBD /* CachedResponseHandler.swift */; };
+		0CC43FF0E31AA320ACFEB0FE6239DF34 /* ServerTrustEvaluation.swift in Sources */ = {isa = PBXBuildFile; fileRef = B708984BB7050F76E7DE263026C4209A /* ServerTrustEvaluation.swift */; };
+		0F7D24E4AC0CA8447DE80B0D97F84AF3 /* SimpleRoundedButton-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = AADFEB3BF323E195CB2BDFB71D2E55DA /* SimpleRoundedButton-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		13457FE4E607509A3B9527B0711033D5 /* ResponseSerialization.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E99F9802833F32BFEF0D91F8133E5E7 /* ResponseSerialization.swift */; };
+		14AB7976E100075ADEA0AB1DB833E72D /* ParameterEncoding.swift in Sources */ = {isa = PBXBuildFile; fileRef = 614B7731C7DD75DF8D436F4AB9BCAD4F /* ParameterEncoding.swift */; };
+		17953A9CF2E354B3E69B9ABC2F367AD9 /* AFError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B2043BECD1E235236BAD31DC02A06DA /* AFError.swift */; };
+		25D080A1F1BCFF04C58A54246D0932BE /* Pods-take365-swiftTests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 97B89B003669C5EE1647DFD84F3925DE /* Pods-take365-swiftTests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		4082513A35C682F2193D002C80F72B79 /* Result+Alamofire.swift in Sources */ = {isa = PBXBuildFile; fileRef = E95DCDFEF80E930A3B658391B46051C2 /* Result+Alamofire.swift */; };
+		4259CA62791538B37D4E3C0009FCA8B8 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 222DAEF0D819F359AFCFF3D4F927E8A7 /* Foundation.framework */; };
+		42CDB5C986C78BBC8E5C0185F746CABF /* SessionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A6B34EE6ED466BB06FFE42ADDD90183 /* SessionDelegate.swift */; };
+		44127C4B989C9CC6A90D78B66A929A5E /* AlamofireExtended.swift in Sources */ = {isa = PBXBuildFile; fileRef = C51253B69BCEF7EBC8D2ECCCB71B0F6E /* AlamofireExtended.swift */; };
+		48D97BE7D5CAED273BD2341C239CC934 /* RequestTaskMap.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A258A58B088F46512465D541CE33724 /* RequestTaskMap.swift */; };
+		56EC8ED1535DAB987F3D2B71D4C05773 /* HTTPHeaders.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6973A3951DD710DA01083CE9CF107E4B /* HTTPHeaders.swift */; };
+		5C4A0685B5A201436AB52EF25829B333 /* MultipartFormData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 336E8915E73573E8FEDB387E387FA8FE /* MultipartFormData.swift */; };
+		5D12235D061AEE7459279AAF8C348DFE /* URLEncodedFormEncoder.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB638ED17CF3E30F7F0C155A8617028B /* URLEncodedFormEncoder.swift */; };
+		5D61C8ED0DDCC9F8B576B6514B19EE50 /* ParameterEncoder.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7570DFF63C0CE045325D460828439A3 /* ParameterEncoder.swift */; };
+		62442F23A1058F3069A2A9E1B934731E /* Pods-take365-swift-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = EAE888C26EE99D61F88F183372BB088E /* Pods-take365-swift-dummy.m */; };
+		69ACE4EEE5A8C1C618B22CC1F7B8EF01 /* Session.swift in Sources */ = {isa = PBXBuildFile; fileRef = D47AC807FAEA90B83C56BD70FFBC5E30 /* Session.swift */; };
+		6A22C46CB1EDE471794D9AB2AC10327F /* Request.swift in Sources */ = {isa = PBXBuildFile; fileRef = 706F564C7D392A99F43134BA203FB91A /* Request.swift */; };
+		70517C3BAC2D6614347DEAC15299EB84 /* URLConvertible+URLRequestConvertible.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B30DA144370013D18FA9F89A5BF1F25 /* URLConvertible+URLRequestConvertible.swift */; };
+		71E50D12849C5AD0CA4532C3DCDAEB29 /* SimpleRoundedButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = C96D4C9AA638FDBA55821F9DBF0CAB4E /* SimpleRoundedButton.swift */; };
+		7CF8362BA31492053F5CB165637AE117 /* NetworkReachabilityManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = BED5302C6D6D9DB66DF76EBC1E07BE48 /* NetworkReachabilityManager.swift */; };
+		92811AC5CD9A5004116AE43C4E8FD955 /* OperationQueue+Alamofire.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E9C68C68203E99FFFF301EE3E4BE438 /* OperationQueue+Alamofire.swift */; };
+		97A168DFB6DB61770CE2DBF4FD39AA8D /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8B079F294DA5D9A879E6D53A91F51A1E /* CFNetwork.framework */; };
+		AD9899986955B2EC1EC20818C860C971 /* RequestInterceptor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 458BCD009C42485F328BA326A4050F4A /* RequestInterceptor.swift */; };
+		AF92602937CA016548022C600B8CDC16 /* URLSessionConfiguration+Alamofire.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7471CAAA0E1C4C6EB427410BAC953BB /* URLSessionConfiguration+Alamofire.swift */; };
+		B1C58F6CED7B3E45170711D9ADF878AF /* Alamofire-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 60E007EFBEC2CB6A68B95543374B3C75 /* Alamofire-dummy.m */; };
+		B23E9A5CDA31534491226F4C2EE8F8E6 /* HTTPMethod.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45B902A90C15D2A000E678BF824CFE01 /* HTTPMethod.swift */; };
+		B788B3354CCEBE56DFDB963CAFD7F6C2 /* Alamofire.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1EB1CEF567C28577113CB2F75D98CEA /* Alamofire.swift */; };
+		B9373E15A35AAD4D6F4AFB7EF69E16A9 /* Pods-take365-swiftTests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 422F1F013BBAF452453B42DAEF520C3A /* Pods-take365-swiftTests-dummy.m */; };
+		BE82AE980F8C7EE28A6448959194F93A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 222DAEF0D819F359AFCFF3D4F927E8A7 /* Foundation.framework */; };
+		C0541480AF2F3E97E9C77875B2F96B8C /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 222DAEF0D819F359AFCFF3D4F927E8A7 /* Foundation.framework */; };
+		C64AF152F7928CDB59385528DB65FE19 /* RedirectHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = F605010357BF50B124E808DB2F05F082 /* RedirectHandler.swift */; };
+		C7369563F6946D8984124E1A546B6425 /* Notifications.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6104702448452E12093766C1DDC25729 /* Notifications.swift */; };
+		CACBD166E573774FB5613C34AA6DA7A7 /* EventMonitor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D203FAB2433A85882ED39A5E9E4724C /* EventMonitor.swift */; };
+		D1C56936CB9C6AEE4A0179F0C3A975BB /* Pods-take365-swiftUITests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = C2C73D2623106A1B8CDA85D822069E2C /* Pods-take365-swiftUITests-dummy.m */; };
+		D6B2983389480F48F27A0704EEB5DC81 /* RetryPolicy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84129615D95BA9EA1A621DCB9A3FF265 /* RetryPolicy.swift */; };
+		D8046A205C488C56E63D2475607CA6F3 /* SimpleRoundedButton-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = C6093A30366153F4941933323B557FAF /* SimpleRoundedButton-dummy.m */; };
+		E07BD425C4EA9ADF15DDFCDB10D0B2FB /* MultipartUpload.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B64AF9AA588912526DA2BF21C35141C /* MultipartUpload.swift */; };
+		E3EF1A1BF44A4FE42EA375F44D031CAC /* Pods-take365-swift-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = E7E84256B150CDDF1D71B07F0B7E0079 /* Pods-take365-swift-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		E4E12208D5246E64B7E6CCAE987ADB03 /* URLRequest+Alamofire.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4FD60C58DE2AF5F7E5DA17B62D74A12 /* URLRequest+Alamofire.swift */; };
+		E5DFEFCD48F2076FC4F689C34F2A6CFD /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 222DAEF0D819F359AFCFF3D4F927E8A7 /* Foundation.framework */; };
+		E9A5AC2F471699CCA516952A5FEB990B /* DispatchQueue+Alamofire.swift in Sources */ = {isa = PBXBuildFile; fileRef = D46663BBEC7BA2910030A8A14F384145 /* DispatchQueue+Alamofire.swift */; };
+		F1E0B31D7ECC4D8089C8DAA6C591FB99 /* Pods-take365-swiftUITests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = EA69B0AA8A13E8F7C214F440FEA6F8BB /* Pods-take365-swiftUITests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F71789DC91A75033EFB79DB828676451 /* Response.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDD35331F0561D03B8D82A6ADCC88D62 /* Response.swift */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		29E91A759DE55606C10A36E773A7B9CA /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = CA6EB4B2864D98F12DCFFEAB9BCE0F96;
+			remoteInfo = "Pods-take365-swift";
+		};
+		4A60A9C822F904AAC0FF4E9B34A01D65 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = CA6EB4B2864D98F12DCFFEAB9BCE0F96;
+			remoteInfo = "Pods-take365-swift";
+		};
+		B9FFFCA4C8CAAA5EC5B351C730E6B777 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 35579AD59B456714759D0F6D074A9FA2;
+			remoteInfo = SimpleRoundedButton;
+		};
+		D471D361C5B8576612C942D69522F3AC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = EAAA1AD3A8A1B59AB91319EE40752C6D;
+			remoteInfo = Alamofire;
+		};
+/* End PBXContainerItemProxy section */
+
 /* Begin PBXFileReference section */
-		0941C5E607CAEB700967C55FCE471183 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		10F7263E8DA46A437BFE40D27A777C7C /* Pods-take365-swiftUITests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-take365-swiftUITests-umbrella.h"; sourceTree = "<group>"; };
-		13520460FC315544590A91C3C935E1A8 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		1EA2D7F7695323C48B11ECA0E4C65992 /* Pods-take365-swiftUITests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-take365-swiftUITests-acknowledgements.plist"; sourceTree = "<group>"; };
-		2AD722022BD8BBF9FA3DBECD29137C64 /* Pods-take365-swift-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-take365-swift-resources.sh"; sourceTree = "<group>"; };
-		2E6BE59840CA3BEB9151A0B1DBD8CF1C /* Pods-take365-swift-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-take365-swift-frameworks.sh"; sourceTree = "<group>"; };
-		33699B8217778466C6920392674952B4 /* Pods-take365-swift-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-take365-swift-acknowledgements.markdown"; sourceTree = "<group>"; };
-		36FA99C5D2A8F9AB4928B608949BDE98 /* Pods-take365-swiftUITests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-take365-swiftUITests-frameworks.sh"; sourceTree = "<group>"; };
-		4E32DA13CD988F641C89BABB06222468 /* Pods-take365-swift.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-take365-swift.release.xcconfig"; sourceTree = "<group>"; };
-		55A28A8BE01B363B46661DFAC24AD2ED /* Pods-take365-swiftTests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-take365-swiftTests-acknowledgements.plist"; sourceTree = "<group>"; };
-		58E857E2E07BE0014F3400D0B7DFADC9 /* Pods_take365_swiftUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_take365_swiftUITests.framework; path = "Pods-take365-swiftUITests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
-		5B8BFC20DDDFAE6C15DBFD0E8D057093 /* Pods-take365-swift.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-take365-swift.debug.xcconfig"; sourceTree = "<group>"; };
-		6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
-		6613597D96948CE7C5BCA96F631B44DC /* Pods-take365-swiftUITests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-take365-swiftUITests-resources.sh"; sourceTree = "<group>"; };
-		7475E6D7873219E29421E6D75323C838 /* Pods-take365-swiftTests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-take365-swiftTests-frameworks.sh"; sourceTree = "<group>"; };
-		7B40D15E1AB16D506094FD2CE059983C /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		8112A3CE616431E5D49BA7B27737B8B5 /* Pods-take365-swiftUITests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-take365-swiftUITests.modulemap"; sourceTree = "<group>"; };
-		830B807FAF25DDA80FF15FCB75687AA4 /* Pods-take365-swiftUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-take365-swiftUITests.release.xcconfig"; sourceTree = "<group>"; };
-		85C3C7F83CC7274F6D4D2EBF76A0CA0D /* Pods-take365-swift-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-take365-swift-acknowledgements.plist"; sourceTree = "<group>"; };
-		932ED181F1D30B884224A75920DB96DD /* Pods-take365-swiftTests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-take365-swiftTests-resources.sh"; sourceTree = "<group>"; };
-		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
-		96FBC68E946A76A9D66178FEFD294972 /* Pods-take365-swiftTests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-take365-swiftTests-dummy.m"; sourceTree = "<group>"; };
-		97C93809CF8CAF993BE1A4B51758954C /* Pods-take365-swift-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-take365-swift-dummy.m"; sourceTree = "<group>"; };
-		A095FAC333AFB80419EC9D90F9FCE891 /* Pods-take365-swiftTests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-take365-swiftTests-acknowledgements.markdown"; sourceTree = "<group>"; };
-		A3F3EF4867488161CF478DDB2AFB9357 /* Pods-take365-swift.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-take365-swift.modulemap"; sourceTree = "<group>"; };
-		A4C5FAF4AEF91200BD9368878676C8BB /* Pods-take365-swiftTests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-take365-swiftTests-umbrella.h"; sourceTree = "<group>"; };
-		B04F66AE95A312C72BCC457D006391ED /* Pods-take365-swiftUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-take365-swiftUITests.debug.xcconfig"; sourceTree = "<group>"; };
-		B27CE59727C68AAD558BC863E8A6632C /* Pods_take365_swiftTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_take365_swiftTests.framework; path = "Pods-take365-swiftTests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
-		BEE50B60FA5B372483558D8A4AD9225F /* Pods_take365_swift.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_take365_swift.framework; path = "Pods-take365-swift.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
-		C41FB34509B635317DC560019743220B /* Pods-take365-swift-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-take365-swift-umbrella.h"; sourceTree = "<group>"; };
-		C6D9A2142CD52F2FAE4BBA0238EEDB87 /* Pods-take365-swiftTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-take365-swiftTests.debug.xcconfig"; sourceTree = "<group>"; };
-		CDFA4604A01477E3E57E2738434B5788 /* Pods-take365-swiftTests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-take365-swiftTests.modulemap"; sourceTree = "<group>"; };
-		D87D96C20334A3A3666706ADF0CEFBDD /* Pods-take365-swiftTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-take365-swiftTests.release.xcconfig"; sourceTree = "<group>"; };
-		EE4BBCD1D9A032FE15FCBBDED52358CC /* Pods-take365-swiftUITests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-take365-swiftUITests-acknowledgements.markdown"; sourceTree = "<group>"; };
-		FCD2527766195CD744AD7CB674AF35D4 /* Pods-take365-swiftUITests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-take365-swiftUITests-dummy.m"; sourceTree = "<group>"; };
+		0241EF4C7996B42656966A4862FE1410 /* Protector.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Protector.swift; path = Source/Protector.swift; sourceTree = "<group>"; };
+		0B01598240DD3A59FC759F3633AB3380 /* Pods-take365-swiftUITests-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-take365-swiftUITests-Info.plist"; sourceTree = "<group>"; };
+		0D1CDB834377F4E7CAD8D563FC1FABE2 /* Alamofire-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Alamofire-umbrella.h"; sourceTree = "<group>"; };
+		0E99F9802833F32BFEF0D91F8133E5E7 /* ResponseSerialization.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ResponseSerialization.swift; path = Source/ResponseSerialization.swift; sourceTree = "<group>"; };
+		1B30DA144370013D18FA9F89A5BF1F25 /* URLConvertible+URLRequestConvertible.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "URLConvertible+URLRequestConvertible.swift"; path = "Source/URLConvertible+URLRequestConvertible.swift"; sourceTree = "<group>"; };
+		1CDDA027D592438663C0ED3A65DA8704 /* Pods-take365-swift.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-take365-swift.debug.xcconfig"; sourceTree = "<group>"; };
+		1E1974AF939EA1D7877F7DBC3A33FBBD /* CachedResponseHandler.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CachedResponseHandler.swift; path = Source/CachedResponseHandler.swift; sourceTree = "<group>"; };
+		1E9C68C68203E99FFFF301EE3E4BE438 /* OperationQueue+Alamofire.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "OperationQueue+Alamofire.swift"; path = "Source/OperationQueue+Alamofire.swift"; sourceTree = "<group>"; };
+		222DAEF0D819F359AFCFF3D4F927E8A7 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.2.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		25799F0B8D648EABB862D897E94160C3 /* Pods-take365-swiftUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-take365-swiftUITests.release.xcconfig"; sourceTree = "<group>"; };
+		31681BE2AD8A4C34FFF03DB12FA022AF /* Pods-take365-swiftUITests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-take365-swiftUITests-acknowledgements.markdown"; sourceTree = "<group>"; };
+		336E8915E73573E8FEDB387E387FA8FE /* MultipartFormData.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = MultipartFormData.swift; path = Source/MultipartFormData.swift; sourceTree = "<group>"; };
+		38B24EBB23F94245EE252DD97A8EC85C /* Pods-take365-swiftUITests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-take365-swiftUITests.modulemap"; sourceTree = "<group>"; };
+		3A258A58B088F46512465D541CE33724 /* RequestTaskMap.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = RequestTaskMap.swift; path = Source/RequestTaskMap.swift; sourceTree = "<group>"; };
+		3B0D76B51FB23A97A0EC7BDFAD098DBA /* Alamofire.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Alamofire.xcconfig; sourceTree = "<group>"; };
+		3CF893A7D918E78881A56451621D1DD2 /* Pods-take365-swift.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-take365-swift.modulemap"; sourceTree = "<group>"; };
+		3EA446E3D8E78E36207E1AFA788F481C /* Pods-take365-swiftTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-take365-swiftTests.debug.xcconfig"; sourceTree = "<group>"; };
+		422F1F013BBAF452453B42DAEF520C3A /* Pods-take365-swiftTests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-take365-swiftTests-dummy.m"; sourceTree = "<group>"; };
+		458BCD009C42485F328BA326A4050F4A /* RequestInterceptor.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = RequestInterceptor.swift; path = Source/RequestInterceptor.swift; sourceTree = "<group>"; };
+		45B902A90C15D2A000E678BF824CFE01 /* HTTPMethod.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = HTTPMethod.swift; path = Source/HTTPMethod.swift; sourceTree = "<group>"; };
+		4CF35BF3410C69F3CE51F429C5DCF48C /* Pods-take365-swiftTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-take365-swiftTests.release.xcconfig"; sourceTree = "<group>"; };
+		4D203FAB2433A85882ED39A5E9E4724C /* EventMonitor.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = EventMonitor.swift; path = Source/EventMonitor.swift; sourceTree = "<group>"; };
+		5285A348F0BCEF6889A9289CCC9348AA /* SimpleRoundedButton.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = SimpleRoundedButton.modulemap; sourceTree = "<group>"; };
+		5B64AF9AA588912526DA2BF21C35141C /* MultipartUpload.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = MultipartUpload.swift; path = Source/MultipartUpload.swift; sourceTree = "<group>"; };
+		5D797E9A5C5782CE845840781FA1CC81 /* Alamofire.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Alamofire.framework; path = Alamofire.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		5F9A54522D397C4AF53D7D43382B5F29 /* Pods_take365_swift.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_take365_swift.framework; path = "Pods-take365-swift.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		60E007EFBEC2CB6A68B95543374B3C75 /* Alamofire-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Alamofire-dummy.m"; sourceTree = "<group>"; };
+		6104702448452E12093766C1DDC25729 /* Notifications.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Notifications.swift; path = Source/Notifications.swift; sourceTree = "<group>"; };
+		614B7731C7DD75DF8D436F4AB9BCAD4F /* ParameterEncoding.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ParameterEncoding.swift; path = Source/ParameterEncoding.swift; sourceTree = "<group>"; };
+		63B227355683C29594E8BD9FAD7EAF16 /* SimpleRoundedButton-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "SimpleRoundedButton-Info.plist"; sourceTree = "<group>"; };
+		63E33C2177BFB03D8E8B6F476F4BF7E6 /* SimpleRoundedButton.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = SimpleRoundedButton.framework; path = SimpleRoundedButton.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		670605EDA8F34AE415AC2F743CF42565 /* Pods-take365-swiftUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-take365-swiftUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		6973A3951DD710DA01083CE9CF107E4B /* HTTPHeaders.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = HTTPHeaders.swift; path = Source/HTTPHeaders.swift; sourceTree = "<group>"; };
+		6AB0C54759412AB96ABFCB935BC7A9CC /* Validation.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Validation.swift; path = Source/Validation.swift; sourceTree = "<group>"; };
+		6B2043BECD1E235236BAD31DC02A06DA /* AFError.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AFError.swift; path = Source/AFError.swift; sourceTree = "<group>"; };
+		706F564C7D392A99F43134BA203FB91A /* Request.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Request.swift; path = Source/Request.swift; sourceTree = "<group>"; };
+		737835057D42BFE5541AC1BC2AAC5FEC /* Pods_take365_swiftUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_take365_swiftUITests.framework; path = "Pods-take365-swiftUITests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		76CC0B19A422E1C11304B61A4AC105D3 /* Pods-take365-swift-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-take365-swift-Info.plist"; sourceTree = "<group>"; };
+		7A6B34EE6ED466BB06FFE42ADDD90183 /* SessionDelegate.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SessionDelegate.swift; path = Source/SessionDelegate.swift; sourceTree = "<group>"; };
+		7D293F9822FA2F8967737604AD599F26 /* SimpleRoundedButton-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SimpleRoundedButton-prefix.pch"; sourceTree = "<group>"; };
+		84129615D95BA9EA1A621DCB9A3FF265 /* RetryPolicy.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = RetryPolicy.swift; path = Source/RetryPolicy.swift; sourceTree = "<group>"; };
+		8B079F294DA5D9A879E6D53A91F51A1E /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.2.sdk/System/Library/Frameworks/CFNetwork.framework; sourceTree = DEVELOPER_DIR; };
+		97B89B003669C5EE1647DFD84F3925DE /* Pods-take365-swiftTests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-take365-swiftTests-umbrella.h"; sourceTree = "<group>"; };
+		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		A6457711DBF2AA1397671EF558C23DC1 /* Pods-take365-swift-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-take365-swift-acknowledgements.markdown"; sourceTree = "<group>"; };
+		AADFEB3BF323E195CB2BDFB71D2E55DA /* SimpleRoundedButton-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SimpleRoundedButton-umbrella.h"; sourceTree = "<group>"; };
+		ACB020E81DD6D3CB731D3F7E0DCE6C4C /* Alamofire.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = Alamofire.modulemap; sourceTree = "<group>"; };
+		B3B390F0E30AEC6DA5080CBF659DD550 /* SimpleRoundedButton.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = SimpleRoundedButton.xcconfig; sourceTree = "<group>"; };
+		B708984BB7050F76E7DE263026C4209A /* ServerTrustEvaluation.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ServerTrustEvaluation.swift; path = Source/ServerTrustEvaluation.swift; sourceTree = "<group>"; };
+		BED5302C6D6D9DB66DF76EBC1E07BE48 /* NetworkReachabilityManager.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = NetworkReachabilityManager.swift; path = Source/NetworkReachabilityManager.swift; sourceTree = "<group>"; };
+		C2C73D2623106A1B8CDA85D822069E2C /* Pods-take365-swiftUITests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-take365-swiftUITests-dummy.m"; sourceTree = "<group>"; };
+		C4FD60C58DE2AF5F7E5DA17B62D74A12 /* URLRequest+Alamofire.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "URLRequest+Alamofire.swift"; path = "Source/URLRequest+Alamofire.swift"; sourceTree = "<group>"; };
+		C51253B69BCEF7EBC8D2ECCCB71B0F6E /* AlamofireExtended.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AlamofireExtended.swift; path = Source/AlamofireExtended.swift; sourceTree = "<group>"; };
+		C6093A30366153F4941933323B557FAF /* SimpleRoundedButton-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "SimpleRoundedButton-dummy.m"; sourceTree = "<group>"; };
+		C67514CA2E2F8788F4C4498661B91D95 /* Pods-take365-swift.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-take365-swift.release.xcconfig"; sourceTree = "<group>"; };
+		C7570DFF63C0CE045325D460828439A3 /* ParameterEncoder.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ParameterEncoder.swift; path = Source/ParameterEncoder.swift; sourceTree = "<group>"; };
+		C96D4C9AA638FDBA55821F9DBF0CAB4E /* SimpleRoundedButton.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SimpleRoundedButton.swift; path = SimpleRoundedButton/Classes/SimpleRoundedButton.swift; sourceTree = "<group>"; };
+		CA6045F59AA70DBD85C54A7B27CA4E53 /* Alamofire-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Alamofire-Info.plist"; sourceTree = "<group>"; };
+		CB638ED17CF3E30F7F0C155A8617028B /* URLEncodedFormEncoder.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = URLEncodedFormEncoder.swift; path = Source/URLEncodedFormEncoder.swift; sourceTree = "<group>"; };
+		CDD35331F0561D03B8D82A6ADCC88D62 /* Response.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Response.swift; path = Source/Response.swift; sourceTree = "<group>"; };
+		D46663BBEC7BA2910030A8A14F384145 /* DispatchQueue+Alamofire.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "DispatchQueue+Alamofire.swift"; path = "Source/DispatchQueue+Alamofire.swift"; sourceTree = "<group>"; };
+		D47AC807FAEA90B83C56BD70FFBC5E30 /* Session.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Session.swift; path = Source/Session.swift; sourceTree = "<group>"; };
+		D587BD7BB1BB32CCECB4BA7272375C43 /* Pods-take365-swiftTests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-take365-swiftTests-acknowledgements.plist"; sourceTree = "<group>"; };
+		D7471CAAA0E1C4C6EB427410BAC953BB /* URLSessionConfiguration+Alamofire.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "URLSessionConfiguration+Alamofire.swift"; path = "Source/URLSessionConfiguration+Alamofire.swift"; sourceTree = "<group>"; };
+		DA29F8C773E0D0E712B4719B69807FAA /* Pods-take365-swift-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-take365-swift-acknowledgements.plist"; sourceTree = "<group>"; };
+		DDEA91D1991D0E518089E77C8F6C05EE /* Pods-take365-swift-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-take365-swift-frameworks.sh"; sourceTree = "<group>"; };
+		DFB325482C0A4307AEA9299C44B4B731 /* Pods-take365-swiftTests-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-take365-swiftTests-Info.plist"; sourceTree = "<group>"; };
+		DFBC7358D750FAA6D623A0E1D1910600 /* Alamofire-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Alamofire-prefix.pch"; sourceTree = "<group>"; };
+		E490340C73EB3C12AF2B1E31A8F5EE72 /* Pods_take365_swiftTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_take365_swiftTests.framework; path = "Pods-take365-swiftTests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		E7E84256B150CDDF1D71B07F0B7E0079 /* Pods-take365-swift-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-take365-swift-umbrella.h"; sourceTree = "<group>"; };
+		E95DCDFEF80E930A3B658391B46051C2 /* Result+Alamofire.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "Result+Alamofire.swift"; path = "Source/Result+Alamofire.swift"; sourceTree = "<group>"; };
+		EA69B0AA8A13E8F7C214F440FEA6F8BB /* Pods-take365-swiftUITests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-take365-swiftUITests-umbrella.h"; sourceTree = "<group>"; };
+		EAE888C26EE99D61F88F183372BB088E /* Pods-take365-swift-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-take365-swift-dummy.m"; sourceTree = "<group>"; };
+		EE41C9AEBB31F7B12938BE97457401CD /* Pods-take365-swiftUITests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-take365-swiftUITests-acknowledgements.plist"; sourceTree = "<group>"; };
+		EF6AB439C9557CFDC83A0392D8ECF27D /* Pods-take365-swiftTests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-take365-swiftTests.modulemap"; sourceTree = "<group>"; };
+		F1EB1CEF567C28577113CB2F75D98CEA /* Alamofire.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Alamofire.swift; path = Source/Alamofire.swift; sourceTree = "<group>"; };
+		F418435EAC550CF2502FE148B8DB3F48 /* Pods-take365-swiftTests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-take365-swiftTests-acknowledgements.markdown"; sourceTree = "<group>"; };
+		F605010357BF50B124E808DB2F05F082 /* RedirectHandler.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = RedirectHandler.swift; path = Source/RedirectHandler.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		32E9E0322FC3019A00B546ACF41F0106 /* Frameworks */ = {
+		5D05D6A9426ABF3BA4AAFE8457D0FBB1 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A294135EE43258276D1948711C63F50F /* Foundation.framework in Frameworks */,
+				C0541480AF2F3E97E9C77875B2F96B8C /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		844F5E5542706E55A50E05096F4B44CF /* Frameworks */ = {
+		62348BFF29A4F3D269E0BD0D6311B594 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				6EBAB2BE7397D999EA09C3ABE002FC95 /* Foundation.framework in Frameworks */,
+				05EFC33EB8028E53E26F44DF3DA7AF76 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		B7E3ED58E0C95A7B59E4F8ECDF25DEFC /* Frameworks */ = {
+		6D86A7B0BAB2BD6A883CE6558D3955D7 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				93FC06F0E2589B9F16BE41BE978241BD /* Foundation.framework in Frameworks */,
+				4259CA62791538B37D4E3C0009FCA8B8 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8B0D8633F410345F93419B8C3D7B6916 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				97A168DFB6DB61770CE2DBF4FD39AA8D /* CFNetwork.framework in Frameworks */,
+				BE82AE980F8C7EE28A6448959194F93A /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A95234F260828230715FC1C3FF2BB373 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E5DFEFCD48F2076FC4F689C34F2A6CFD /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		5410C04A42C02A5976E8193B01A3FCC7 /* Targets Support Files */ = {
+		1628BF05B4CAFDCC3549A101F5A10A17 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				A5209E9C37CF0E34BF14F7114652031B /* Pods-take365-swift */,
-				6E602CD441E9C718B6ECACF26543EDA2 /* Pods-take365-swiftTests */,
-				A45BA9D258B055A95DE674A4CB81723F /* Pods-take365-swiftUITests */,
+				E34DCC8E2CF86B8D72232914781A840D /* iOS */,
 			);
-			name = "Targets Support Files";
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		6E602CD441E9C718B6ECACF26543EDA2 /* Pods-take365-swiftTests */ = {
+		22689FAA2CE878BC1EDA659B3F08982D /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				0941C5E607CAEB700967C55FCE471183 /* Info.plist */,
-				CDFA4604A01477E3E57E2738434B5788 /* Pods-take365-swiftTests.modulemap */,
-				A095FAC333AFB80419EC9D90F9FCE891 /* Pods-take365-swiftTests-acknowledgements.markdown */,
-				55A28A8BE01B363B46661DFAC24AD2ED /* Pods-take365-swiftTests-acknowledgements.plist */,
-				96FBC68E946A76A9D66178FEFD294972 /* Pods-take365-swiftTests-dummy.m */,
-				7475E6D7873219E29421E6D75323C838 /* Pods-take365-swiftTests-frameworks.sh */,
-				932ED181F1D30B884224A75920DB96DD /* Pods-take365-swiftTests-resources.sh */,
-				A4C5FAF4AEF91200BD9368878676C8BB /* Pods-take365-swiftTests-umbrella.h */,
-				C6D9A2142CD52F2FAE4BBA0238EEDB87 /* Pods-take365-swiftTests.debug.xcconfig */,
-				D87D96C20334A3A3666706ADF0CEFBDD /* Pods-take365-swiftTests.release.xcconfig */,
+				5D797E9A5C5782CE845840781FA1CC81 /* Alamofire.framework */,
+				5F9A54522D397C4AF53D7D43382B5F29 /* Pods_take365_swift.framework */,
+				E490340C73EB3C12AF2B1E31A8F5EE72 /* Pods_take365_swiftTests.framework */,
+				737835057D42BFE5541AC1BC2AAC5FEC /* Pods_take365_swiftUITests.framework */,
+				63E33C2177BFB03D8E8B6F476F4BF7E6 /* SimpleRoundedButton.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		22B1A327801F11214ECC7A44E333A9E1 /* Pods-take365-swiftTests */ = {
+			isa = PBXGroup;
+			children = (
+				EF6AB439C9557CFDC83A0392D8ECF27D /* Pods-take365-swiftTests.modulemap */,
+				F418435EAC550CF2502FE148B8DB3F48 /* Pods-take365-swiftTests-acknowledgements.markdown */,
+				D587BD7BB1BB32CCECB4BA7272375C43 /* Pods-take365-swiftTests-acknowledgements.plist */,
+				422F1F013BBAF452453B42DAEF520C3A /* Pods-take365-swiftTests-dummy.m */,
+				DFB325482C0A4307AEA9299C44B4B731 /* Pods-take365-swiftTests-Info.plist */,
+				97B89B003669C5EE1647DFD84F3925DE /* Pods-take365-swiftTests-umbrella.h */,
+				3EA446E3D8E78E36207E1AFA788F481C /* Pods-take365-swiftTests.debug.xcconfig */,
+				4CF35BF3410C69F3CE51F429C5DCF48C /* Pods-take365-swiftTests.release.xcconfig */,
 			);
 			name = "Pods-take365-swiftTests";
 			path = "Target Support Files/Pods-take365-swiftTests";
 			sourceTree = "<group>";
 		};
-		7DB346D0F39D3F0E887471402A8071AB = {
+		65055D90B2E1E6B7C41CD87A1B81A587 /* Pods-take365-swift */ = {
 			isa = PBXGroup;
 			children = (
-				93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */,
-				BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */,
-				93C5E8C1CCA4C774B7871E4C829C4782 /* Products */,
-				5410C04A42C02A5976E8193B01A3FCC7 /* Targets Support Files */,
-			);
-			sourceTree = "<group>";
-		};
-		93C5E8C1CCA4C774B7871E4C829C4782 /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				BEE50B60FA5B372483558D8A4AD9225F /* Pods_take365_swift.framework */,
-				B27CE59727C68AAD558BC863E8A6632C /* Pods_take365_swiftTests.framework */,
-				58E857E2E07BE0014F3400D0B7DFADC9 /* Pods_take365_swiftUITests.framework */,
-			);
-			name = Products;
-			sourceTree = "<group>";
-		};
-		A45BA9D258B055A95DE674A4CB81723F /* Pods-take365-swiftUITests */ = {
-			isa = PBXGroup;
-			children = (
-				7B40D15E1AB16D506094FD2CE059983C /* Info.plist */,
-				8112A3CE616431E5D49BA7B27737B8B5 /* Pods-take365-swiftUITests.modulemap */,
-				EE4BBCD1D9A032FE15FCBBDED52358CC /* Pods-take365-swiftUITests-acknowledgements.markdown */,
-				1EA2D7F7695323C48B11ECA0E4C65992 /* Pods-take365-swiftUITests-acknowledgements.plist */,
-				FCD2527766195CD744AD7CB674AF35D4 /* Pods-take365-swiftUITests-dummy.m */,
-				36FA99C5D2A8F9AB4928B608949BDE98 /* Pods-take365-swiftUITests-frameworks.sh */,
-				6613597D96948CE7C5BCA96F631B44DC /* Pods-take365-swiftUITests-resources.sh */,
-				10F7263E8DA46A437BFE40D27A777C7C /* Pods-take365-swiftUITests-umbrella.h */,
-				B04F66AE95A312C72BCC457D006391ED /* Pods-take365-swiftUITests.debug.xcconfig */,
-				830B807FAF25DDA80FF15FCB75687AA4 /* Pods-take365-swiftUITests.release.xcconfig */,
-			);
-			name = "Pods-take365-swiftUITests";
-			path = "Target Support Files/Pods-take365-swiftUITests";
-			sourceTree = "<group>";
-		};
-		A5209E9C37CF0E34BF14F7114652031B /* Pods-take365-swift */ = {
-			isa = PBXGroup;
-			children = (
-				13520460FC315544590A91C3C935E1A8 /* Info.plist */,
-				A3F3EF4867488161CF478DDB2AFB9357 /* Pods-take365-swift.modulemap */,
-				33699B8217778466C6920392674952B4 /* Pods-take365-swift-acknowledgements.markdown */,
-				85C3C7F83CC7274F6D4D2EBF76A0CA0D /* Pods-take365-swift-acknowledgements.plist */,
-				97C93809CF8CAF993BE1A4B51758954C /* Pods-take365-swift-dummy.m */,
-				2E6BE59840CA3BEB9151A0B1DBD8CF1C /* Pods-take365-swift-frameworks.sh */,
-				2AD722022BD8BBF9FA3DBECD29137C64 /* Pods-take365-swift-resources.sh */,
-				C41FB34509B635317DC560019743220B /* Pods-take365-swift-umbrella.h */,
-				5B8BFC20DDDFAE6C15DBFD0E8D057093 /* Pods-take365-swift.debug.xcconfig */,
-				4E32DA13CD988F641C89BABB06222468 /* Pods-take365-swift.release.xcconfig */,
+				3CF893A7D918E78881A56451621D1DD2 /* Pods-take365-swift.modulemap */,
+				A6457711DBF2AA1397671EF558C23DC1 /* Pods-take365-swift-acknowledgements.markdown */,
+				DA29F8C773E0D0E712B4719B69807FAA /* Pods-take365-swift-acknowledgements.plist */,
+				EAE888C26EE99D61F88F183372BB088E /* Pods-take365-swift-dummy.m */,
+				DDEA91D1991D0E518089E77C8F6C05EE /* Pods-take365-swift-frameworks.sh */,
+				76CC0B19A422E1C11304B61A4AC105D3 /* Pods-take365-swift-Info.plist */,
+				E7E84256B150CDDF1D71B07F0B7E0079 /* Pods-take365-swift-umbrella.h */,
+				1CDDA027D592438663C0ED3A65DA8704 /* Pods-take365-swift.debug.xcconfig */,
+				C67514CA2E2F8788F4C4498661B91D95 /* Pods-take365-swift.release.xcconfig */,
 			);
 			name = "Pods-take365-swift";
 			path = "Target Support Files/Pods-take365-swift";
 			sourceTree = "<group>";
 		};
-		BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */ = {
+		7CA4FE28666321F27F92925B40007331 /* Alamofire */ = {
 			isa = PBXGroup;
 			children = (
-				D35AF013A5F0BAD4F32504907A52519E /* iOS */,
+				6B2043BECD1E235236BAD31DC02A06DA /* AFError.swift */,
+				F1EB1CEF567C28577113CB2F75D98CEA /* Alamofire.swift */,
+				C51253B69BCEF7EBC8D2ECCCB71B0F6E /* AlamofireExtended.swift */,
+				1E1974AF939EA1D7877F7DBC3A33FBBD /* CachedResponseHandler.swift */,
+				D46663BBEC7BA2910030A8A14F384145 /* DispatchQueue+Alamofire.swift */,
+				4D203FAB2433A85882ED39A5E9E4724C /* EventMonitor.swift */,
+				6973A3951DD710DA01083CE9CF107E4B /* HTTPHeaders.swift */,
+				45B902A90C15D2A000E678BF824CFE01 /* HTTPMethod.swift */,
+				336E8915E73573E8FEDB387E387FA8FE /* MultipartFormData.swift */,
+				5B64AF9AA588912526DA2BF21C35141C /* MultipartUpload.swift */,
+				BED5302C6D6D9DB66DF76EBC1E07BE48 /* NetworkReachabilityManager.swift */,
+				6104702448452E12093766C1DDC25729 /* Notifications.swift */,
+				1E9C68C68203E99FFFF301EE3E4BE438 /* OperationQueue+Alamofire.swift */,
+				C7570DFF63C0CE045325D460828439A3 /* ParameterEncoder.swift */,
+				614B7731C7DD75DF8D436F4AB9BCAD4F /* ParameterEncoding.swift */,
+				0241EF4C7996B42656966A4862FE1410 /* Protector.swift */,
+				F605010357BF50B124E808DB2F05F082 /* RedirectHandler.swift */,
+				706F564C7D392A99F43134BA203FB91A /* Request.swift */,
+				458BCD009C42485F328BA326A4050F4A /* RequestInterceptor.swift */,
+				3A258A58B088F46512465D541CE33724 /* RequestTaskMap.swift */,
+				CDD35331F0561D03B8D82A6ADCC88D62 /* Response.swift */,
+				0E99F9802833F32BFEF0D91F8133E5E7 /* ResponseSerialization.swift */,
+				E95DCDFEF80E930A3B658391B46051C2 /* Result+Alamofire.swift */,
+				84129615D95BA9EA1A621DCB9A3FF265 /* RetryPolicy.swift */,
+				B708984BB7050F76E7DE263026C4209A /* ServerTrustEvaluation.swift */,
+				D47AC807FAEA90B83C56BD70FFBC5E30 /* Session.swift */,
+				7A6B34EE6ED466BB06FFE42ADDD90183 /* SessionDelegate.swift */,
+				1B30DA144370013D18FA9F89A5BF1F25 /* URLConvertible+URLRequestConvertible.swift */,
+				CB638ED17CF3E30F7F0C155A8617028B /* URLEncodedFormEncoder.swift */,
+				C4FD60C58DE2AF5F7E5DA17B62D74A12 /* URLRequest+Alamofire.swift */,
+				D7471CAAA0E1C4C6EB427410BAC953BB /* URLSessionConfiguration+Alamofire.swift */,
+				6AB0C54759412AB96ABFCB935BC7A9CC /* Validation.swift */,
+				CFDEB4B70C5450706FE56B21DB0ACFDC /* Support Files */,
 			);
-			name = Frameworks;
+			name = Alamofire;
+			path = Alamofire;
 			sourceTree = "<group>";
 		};
-		D35AF013A5F0BAD4F32504907A52519E /* iOS */ = {
+		80118EDEF5951088D0B9E89918B7B898 /* Support Files */ = {
 			isa = PBXGroup;
 			children = (
-				6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */,
+				5285A348F0BCEF6889A9289CCC9348AA /* SimpleRoundedButton.modulemap */,
+				B3B390F0E30AEC6DA5080CBF659DD550 /* SimpleRoundedButton.xcconfig */,
+				C6093A30366153F4941933323B557FAF /* SimpleRoundedButton-dummy.m */,
+				63B227355683C29594E8BD9FAD7EAF16 /* SimpleRoundedButton-Info.plist */,
+				7D293F9822FA2F8967737604AD599F26 /* SimpleRoundedButton-prefix.pch */,
+				AADFEB3BF323E195CB2BDFB71D2E55DA /* SimpleRoundedButton-umbrella.h */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/SimpleRoundedButton";
+			sourceTree = "<group>";
+		};
+		A0A97021401C53E951E1459ED3836566 /* Pods-take365-swiftUITests */ = {
+			isa = PBXGroup;
+			children = (
+				38B24EBB23F94245EE252DD97A8EC85C /* Pods-take365-swiftUITests.modulemap */,
+				31681BE2AD8A4C34FFF03DB12FA022AF /* Pods-take365-swiftUITests-acknowledgements.markdown */,
+				EE41C9AEBB31F7B12938BE97457401CD /* Pods-take365-swiftUITests-acknowledgements.plist */,
+				C2C73D2623106A1B8CDA85D822069E2C /* Pods-take365-swiftUITests-dummy.m */,
+				0B01598240DD3A59FC759F3633AB3380 /* Pods-take365-swiftUITests-Info.plist */,
+				EA69B0AA8A13E8F7C214F440FEA6F8BB /* Pods-take365-swiftUITests-umbrella.h */,
+				670605EDA8F34AE415AC2F743CF42565 /* Pods-take365-swiftUITests.debug.xcconfig */,
+				25799F0B8D648EABB862D897E94160C3 /* Pods-take365-swiftUITests.release.xcconfig */,
+			);
+			name = "Pods-take365-swiftUITests";
+			path = "Target Support Files/Pods-take365-swiftUITests";
+			sourceTree = "<group>";
+		};
+		CF1408CF629C7361332E53B88F7BD30C = {
+			isa = PBXGroup;
+			children = (
+				9D940727FF8FB9C785EB98E56350EF41 /* Podfile */,
+				1628BF05B4CAFDCC3549A101F5A10A17 /* Frameworks */,
+				FB4D40AF868A5DDDCD146DD7EEC89144 /* Pods */,
+				22689FAA2CE878BC1EDA659B3F08982D /* Products */,
+				D896565B0212F3777D969F5D92EE7BD8 /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		CFDEB4B70C5450706FE56B21DB0ACFDC /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				ACB020E81DD6D3CB731D3F7E0DCE6C4C /* Alamofire.modulemap */,
+				3B0D76B51FB23A97A0EC7BDFAD098DBA /* Alamofire.xcconfig */,
+				60E007EFBEC2CB6A68B95543374B3C75 /* Alamofire-dummy.m */,
+				CA6045F59AA70DBD85C54A7B27CA4E53 /* Alamofire-Info.plist */,
+				DFBC7358D750FAA6D623A0E1D1910600 /* Alamofire-prefix.pch */,
+				0D1CDB834377F4E7CAD8D563FC1FABE2 /* Alamofire-umbrella.h */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/Alamofire";
+			sourceTree = "<group>";
+		};
+		D896565B0212F3777D969F5D92EE7BD8 /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				65055D90B2E1E6B7C41CD87A1B81A587 /* Pods-take365-swift */,
+				22B1A327801F11214ECC7A44E333A9E1 /* Pods-take365-swiftTests */,
+				A0A97021401C53E951E1459ED3836566 /* Pods-take365-swiftUITests */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		E34DCC8E2CF86B8D72232914781A840D /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				8B079F294DA5D9A879E6D53A91F51A1E /* CFNetwork.framework */,
+				222DAEF0D819F359AFCFF3D4F927E8A7 /* Foundation.framework */,
 			);
 			name = iOS;
+			sourceTree = "<group>";
+		};
+		F32E4D7EF0464296E444979FB56A600D /* SimpleRoundedButton */ = {
+			isa = PBXGroup;
+			children = (
+				C96D4C9AA638FDBA55821F9DBF0CAB4E /* SimpleRoundedButton.swift */,
+				80118EDEF5951088D0B9E89918B7B898 /* Support Files */,
+			);
+			name = SimpleRoundedButton;
+			path = SimpleRoundedButton;
+			sourceTree = "<group>";
+		};
+		FB4D40AF868A5DDDCD146DD7EEC89144 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				7CA4FE28666321F27F92925B40007331 /* Alamofire */,
+				F32E4D7EF0464296E444979FB56A600D /* SimpleRoundedButton */,
+			);
+			name = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
-		0358D7ABAC8F1581C83F5C196BDEDFE5 /* Headers */ = {
+		3A11FEDC81832D1254285636622482EC /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				458D51554728BE47E6E6F0EE954E5D10 /* Pods-take365-swift-umbrella.h in Headers */,
+				25D080A1F1BCFF04C58A54246D0932BE /* Pods-take365-swiftTests-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		AA7FA91987A7D18C10610D98EE3BA868 /* Headers */ = {
+		6F7CEB18B8ABDE10635E09D0E5A519CF /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				233A2DBA461AA2F25F729D1CC05380DE /* Pods-take365-swiftTests-umbrella.h in Headers */,
+				E3EF1A1BF44A4FE42EA375F44D031CAC /* Pods-take365-swift-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		ADE99AEB3661920E7AAECF8AEBEEF1F0 /* Headers */ = {
+		A509F9C66A4DC271250AAB01D54F9432 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9439366653FC29CF50CB47E91021B664 /* Pods-take365-swiftUITests-umbrella.h in Headers */,
+				F1E0B31D7ECC4D8089C8DAA6C591FB99 /* Pods-take365-swiftUITests-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AA84132B1E326940B8F061730A0C53C9 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0F7D24E4AC0CA8447DE80B0D97F84AF3 /* SimpleRoundedButton-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		ADDF288DD930A46B5F0F198C225895C9 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				00FA97D56201027AEB1C7692A2C3CF8B /* Alamofire-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
-		1220FD87070BAC84372FCA6215A470BD /* Pods-take365-swiftUITests */ = {
+		35579AD59B456714759D0F6D074A9FA2 /* SimpleRoundedButton */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 16D3FB3105D2E0EB3B863F32989F7D95 /* Build configuration list for PBXNativeTarget "Pods-take365-swiftUITests" */;
+			buildConfigurationList = F55D6B9CD080BD8121010774F858ECF9 /* Build configuration list for PBXNativeTarget "SimpleRoundedButton" */;
 			buildPhases = (
-				FFB1C844773B4784CA98D9C39A0BC073 /* Sources */,
-				844F5E5542706E55A50E05096F4B44CF /* Frameworks */,
-				ADE99AEB3661920E7AAECF8AEBEEF1F0 /* Headers */,
+				AA84132B1E326940B8F061730A0C53C9 /* Headers */,
+				EB7FFB7233454ED573D100D310D263D7 /* Sources */,
+				A95234F260828230715FC1C3FF2BB373 /* Frameworks */,
+				60E4BB142C06B3D4773EC0D48FFA545B /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+			);
+			name = SimpleRoundedButton;
+			productName = SimpleRoundedButton;
+			productReference = 63E33C2177BFB03D8E8B6F476F4BF7E6 /* SimpleRoundedButton.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		3EE8E3F10F7A8B584014EC3A1AAB99D2 /* Pods-take365-swiftUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4F26030D6BD6E42DE84D1C16DA253294 /* Build configuration list for PBXNativeTarget "Pods-take365-swiftUITests" */;
+			buildPhases = (
+				A509F9C66A4DC271250AAB01D54F9432 /* Headers */,
+				75B000A746A69016BD76F53EF15C1927 /* Sources */,
+				6D86A7B0BAB2BD6A883CE6558D3955D7 /* Frameworks */,
+				97EAB67BA3DAC116C8EF134E021F573C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				38161617AE040AD7A92B6D214E385EAE /* PBXTargetDependency */,
 			);
 			name = "Pods-take365-swiftUITests";
 			productName = "Pods-take365-swiftUITests";
-			productReference = 58E857E2E07BE0014F3400D0B7DFADC9 /* Pods_take365_swiftUITests.framework */;
+			productReference = 737835057D42BFE5541AC1BC2AAC5FEC /* Pods_take365_swiftUITests.framework */;
 			productType = "com.apple.product-type.framework";
 		};
-		669D6B8C0E23B0BB75B4142612B409C6 /* Pods-take365-swiftTests */ = {
+		A7A8770B5DFF5A1C40CAFAE09DCC3569 /* Pods-take365-swiftTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = FF8394C19583D2938E17CEB263BE5B3E /* Build configuration list for PBXNativeTarget "Pods-take365-swiftTests" */;
+			buildConfigurationList = 52A4E3BDFAB379D155ED5BB8BB705DF3 /* Build configuration list for PBXNativeTarget "Pods-take365-swiftTests" */;
 			buildPhases = (
-				597F74FA0CB492C61945657FC4E4A55C /* Sources */,
-				B7E3ED58E0C95A7B59E4F8ECDF25DEFC /* Frameworks */,
-				AA7FA91987A7D18C10610D98EE3BA868 /* Headers */,
+				3A11FEDC81832D1254285636622482EC /* Headers */,
+				DBF22DDD19AE68231DA24FB3F060D5B5 /* Sources */,
+				62348BFF29A4F3D269E0BD0D6311B594 /* Frameworks */,
+				ADA79C55A6CDE7EB0613ED1C2D8ECC45 /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				CCFCF8F78AD898D4F24A7F6955FFFEC4 /* PBXTargetDependency */,
 			);
 			name = "Pods-take365-swiftTests";
 			productName = "Pods-take365-swiftTests";
-			productReference = B27CE59727C68AAD558BC863E8A6632C /* Pods_take365_swiftTests.framework */;
+			productReference = E490340C73EB3C12AF2B1E31A8F5EE72 /* Pods_take365_swiftTests.framework */;
 			productType = "com.apple.product-type.framework";
 		};
-		B92675994270C6581D9666C088898494 /* Pods-take365-swift */ = {
+		CA6EB4B2864D98F12DCFFEAB9BCE0F96 /* Pods-take365-swift */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 4C1113D45B4361B8F59F3F4BA0B8AF08 /* Build configuration list for PBXNativeTarget "Pods-take365-swift" */;
+			buildConfigurationList = 5B36E0E368966EF9B3081B86B7E3F0FF /* Build configuration list for PBXNativeTarget "Pods-take365-swift" */;
 			buildPhases = (
-				60E11C29DC0828C483DCBEF873E77A07 /* Sources */,
-				32E9E0322FC3019A00B546ACF41F0106 /* Frameworks */,
-				0358D7ABAC8F1581C83F5C196BDEDFE5 /* Headers */,
+				6F7CEB18B8ABDE10635E09D0E5A519CF /* Headers */,
+				666568276A9212AAD66F7A66F09E123F /* Sources */,
+				5D05D6A9426ABF3BA4AAFE8457D0FBB1 /* Frameworks */,
+				65B9C203941804854C4678EB8F5C3210 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				F630C639F107A72DDC0E358FC7AAFB31 /* PBXTargetDependency */,
+				776E1353D6E31BE876108373375F439A /* PBXTargetDependency */,
+			);
+			name = "Pods-take365-swift";
+			productName = "Pods-take365-swift";
+			productReference = 5F9A54522D397C4AF53D7D43382B5F29 /* Pods_take365_swift.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		EAAA1AD3A8A1B59AB91319EE40752C6D /* Alamofire */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6B2B8EC7E21CDBFF2BDA26B1B4AC4C0D /* Build configuration list for PBXNativeTarget "Alamofire" */;
+			buildPhases = (
+				ADDF288DD930A46B5F0F198C225895C9 /* Headers */,
+				7349DB0E9BEBE664696F1DCC25226F26 /* Sources */,
+				8B0D8633F410345F93419B8C3D7B6916 /* Frameworks */,
+				28FC0024B79C28A420D7C4FEBB9E3AEB /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
-			name = "Pods-take365-swift";
-			productName = "Pods-take365-swift";
-			productReference = BEE50B60FA5B372483558D8A4AD9225F /* Pods_take365_swift.framework */;
+			name = Alamofire;
+			productName = Alamofire;
+			productReference = 5D797E9A5C5782CE845840781FA1CC81 /* Alamofire.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		D41D8CD98F00B204E9800998ECF8427E /* Project object */ = {
+		BFDFE7DC352907FC980B868725387E98 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastSwiftUpdateCheck = 0930;
-				LastUpgradeCheck = 0930;
+				LastSwiftUpdateCheck = 1100;
+				LastUpgradeCheck = 1100;
 			};
-			buildConfigurationList = 2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */;
-			compatibilityVersion = "Xcode 3.2";
-			developmentRegion = English;
+			buildConfigurationList = 4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */;
+			compatibilityVersion = "Xcode 8.0";
+			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
 				en,
+				Base,
 			);
-			mainGroup = 7DB346D0F39D3F0E887471402A8071AB;
-			productRefGroup = 93C5E8C1CCA4C774B7871E4C829C4782 /* Products */;
+			mainGroup = CF1408CF629C7361332E53B88F7BD30C;
+			productRefGroup = 22689FAA2CE878BC1EDA659B3F08982D /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				B92675994270C6581D9666C088898494 /* Pods-take365-swift */,
-				669D6B8C0E23B0BB75B4142612B409C6 /* Pods-take365-swiftTests */,
-				1220FD87070BAC84372FCA6215A470BD /* Pods-take365-swiftUITests */,
+				EAAA1AD3A8A1B59AB91319EE40752C6D /* Alamofire */,
+				CA6EB4B2864D98F12DCFFEAB9BCE0F96 /* Pods-take365-swift */,
+				A7A8770B5DFF5A1C40CAFAE09DCC3569 /* Pods-take365-swiftTests */,
+				3EE8E3F10F7A8B584014EC3A1AAB99D2 /* Pods-take365-swiftUITests */,
+				35579AD59B456714759D0F6D074A9FA2 /* SimpleRoundedButton */,
 			);
 		};
 /* End PBXProject section */
 
+/* Begin PBXResourcesBuildPhase section */
+		28FC0024B79C28A420D7C4FEBB9E3AEB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		60E4BB142C06B3D4773EC0D48FFA545B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		65B9C203941804854C4678EB8F5C3210 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		97EAB67BA3DAC116C8EF134E021F573C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		ADA79C55A6CDE7EB0613ED1C2D8ECC45 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
-		597F74FA0CB492C61945657FC4E4A55C /* Sources */ = {
+		666568276A9212AAD66F7A66F09E123F /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				938BCC96E29ABE454362281F942A00EF /* Pods-take365-swiftTests-dummy.m in Sources */,
+				62442F23A1058F3069A2A9E1B934731E /* Pods-take365-swift-dummy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		60E11C29DC0828C483DCBEF873E77A07 /* Sources */ = {
+		7349DB0E9BEBE664696F1DCC25226F26 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				78470C183806963506C8E92F191CB223 /* Pods-take365-swift-dummy.m in Sources */,
+				17953A9CF2E354B3E69B9ABC2F367AD9 /* AFError.swift in Sources */,
+				B1C58F6CED7B3E45170711D9ADF878AF /* Alamofire-dummy.m in Sources */,
+				B788B3354CCEBE56DFDB963CAFD7F6C2 /* Alamofire.swift in Sources */,
+				44127C4B989C9CC6A90D78B66A929A5E /* AlamofireExtended.swift in Sources */,
+				0AE06C3AEA6CA45342BA703230ABD2CB /* CachedResponseHandler.swift in Sources */,
+				E9A5AC2F471699CCA516952A5FEB990B /* DispatchQueue+Alamofire.swift in Sources */,
+				CACBD166E573774FB5613C34AA6DA7A7 /* EventMonitor.swift in Sources */,
+				56EC8ED1535DAB987F3D2B71D4C05773 /* HTTPHeaders.swift in Sources */,
+				B23E9A5CDA31534491226F4C2EE8F8E6 /* HTTPMethod.swift in Sources */,
+				5C4A0685B5A201436AB52EF25829B333 /* MultipartFormData.swift in Sources */,
+				E07BD425C4EA9ADF15DDFCDB10D0B2FB /* MultipartUpload.swift in Sources */,
+				7CF8362BA31492053F5CB165637AE117 /* NetworkReachabilityManager.swift in Sources */,
+				C7369563F6946D8984124E1A546B6425 /* Notifications.swift in Sources */,
+				92811AC5CD9A5004116AE43C4E8FD955 /* OperationQueue+Alamofire.swift in Sources */,
+				5D61C8ED0DDCC9F8B576B6514B19EE50 /* ParameterEncoder.swift in Sources */,
+				14AB7976E100075ADEA0AB1DB833E72D /* ParameterEncoding.swift in Sources */,
+				0419772A87B16DB7DCF405A9E77D671F /* Protector.swift in Sources */,
+				C64AF152F7928CDB59385528DB65FE19 /* RedirectHandler.swift in Sources */,
+				6A22C46CB1EDE471794D9AB2AC10327F /* Request.swift in Sources */,
+				AD9899986955B2EC1EC20818C860C971 /* RequestInterceptor.swift in Sources */,
+				48D97BE7D5CAED273BD2341C239CC934 /* RequestTaskMap.swift in Sources */,
+				F71789DC91A75033EFB79DB828676451 /* Response.swift in Sources */,
+				13457FE4E607509A3B9527B0711033D5 /* ResponseSerialization.swift in Sources */,
+				4082513A35C682F2193D002C80F72B79 /* Result+Alamofire.swift in Sources */,
+				D6B2983389480F48F27A0704EEB5DC81 /* RetryPolicy.swift in Sources */,
+				0CC43FF0E31AA320ACFEB0FE6239DF34 /* ServerTrustEvaluation.swift in Sources */,
+				69ACE4EEE5A8C1C618B22CC1F7B8EF01 /* Session.swift in Sources */,
+				42CDB5C986C78BBC8E5C0185F746CABF /* SessionDelegate.swift in Sources */,
+				70517C3BAC2D6614347DEAC15299EB84 /* URLConvertible+URLRequestConvertible.swift in Sources */,
+				5D12235D061AEE7459279AAF8C348DFE /* URLEncodedFormEncoder.swift in Sources */,
+				E4E12208D5246E64B7E6CCAE987ADB03 /* URLRequest+Alamofire.swift in Sources */,
+				AF92602937CA016548022C600B8CDC16 /* URLSessionConfiguration+Alamofire.swift in Sources */,
+				06507A26118BA5ACFBBC8C225776920E /* Validation.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		FFB1C844773B4784CA98D9C39A0BC073 /* Sources */ = {
+		75B000A746A69016BD76F53EF15C1927 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				723FD9920C4AA78897A9ECA5EA232CA8 /* Pods-take365-swiftUITests-dummy.m in Sources */,
+				D1C56936CB9C6AEE4A0179F0C3A975BB /* Pods-take365-swiftUITests-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DBF22DDD19AE68231DA24FB3F060D5B5 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B9373E15A35AAD4D6F4AFB7EF69E16A9 /* Pods-take365-swiftTests-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EB7FFB7233454ED573D100D310D263D7 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D8046A205C488C56E63D2475607CA6F3 /* SimpleRoundedButton-dummy.m in Sources */,
+				71E50D12849C5AD0CA4532C3DCDAEB29 /* SimpleRoundedButton.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
-/* Begin XCBuildConfiguration section */
-		0EB74B14AA5AACDC39B17F7E8F2DBD83 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 4E32DA13CD988F641C89BABB06222468 /* Pods-take365-swift.release.xcconfig */;
-			buildSettings = {
-				CLANG_ENABLE_OBJC_WEAK = NO;
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = "Target Support Files/Pods-take365-swift/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-take365-swift/Pods-take365-swift.modulemap";
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = Pods_take365_swift;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VALIDATE_PRODUCT = YES;
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
+/* Begin PBXTargetDependency section */
+		38161617AE040AD7A92B6D214E385EAE /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "Pods-take365-swift";
+			target = CA6EB4B2864D98F12DCFFEAB9BCE0F96 /* Pods-take365-swift */;
+			targetProxy = 29E91A759DE55606C10A36E773A7B9CA /* PBXContainerItemProxy */;
 		};
-		323A24856F1A4871A780301AF5C02A2A /* Debug */ = {
+		776E1353D6E31BE876108373375F439A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = SimpleRoundedButton;
+			target = 35579AD59B456714759D0F6D074A9FA2 /* SimpleRoundedButton */;
+			targetProxy = B9FFFCA4C8CAAA5EC5B351C730E6B777 /* PBXContainerItemProxy */;
+		};
+		CCFCF8F78AD898D4F24A7F6955FFFEC4 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "Pods-take365-swift";
+			target = CA6EB4B2864D98F12DCFFEAB9BCE0F96 /* Pods-take365-swift */;
+			targetProxy = 4A60A9C822F904AAC0FF4E9B34A01D65 /* PBXContainerItemProxy */;
+		};
+		F630C639F107A72DDC0E358FC7AAFB31 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = Alamofire;
+			target = EAAA1AD3A8A1B59AB91319EE40752C6D /* Alamofire */;
+			targetProxy = D471D361C5B8576612C942D69522F3AC /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		2F55A3566E4E4FC936EAEAB624C33C12 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -387,7 +747,236 @@
 				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				CODE_SIGNING_REQUIRED = NO;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_RELEASE=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 5.0;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Release;
+		};
+		422E74EF6BDE55F5BDC807F5C9AE6C5B /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = B3B390F0E30AEC6DA5080CBF659DD550 /* SimpleRoundedButton.xcconfig */;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/SimpleRoundedButton/SimpleRoundedButton-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/SimpleRoundedButton/SimpleRoundedButton-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/SimpleRoundedButton/SimpleRoundedButton.modulemap";
+				PRODUCT_MODULE_NAME = SimpleRoundedButton;
+				PRODUCT_NAME = SimpleRoundedButton;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		5D50E7DBB28EB6FA2EC3B2EED73300BA /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4CF35BF3410C69F3CE51F429C5DCF48C /* Pods-take365-swiftTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-take365-swiftTests/Pods-take365-swiftTests-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-take365-swiftTests/Pods-take365-swiftTests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		66CC7D0A9AA177A55C5C4E07E763CEF3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = C67514CA2E2F8788F4C4498661B91D95 /* Pods-take365-swift.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-take365-swift/Pods-take365-swift-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-take365-swift/Pods-take365-swift.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		69E08EE3E8E0CB7B39E3A4528BD15E5E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3B0D76B51FB23A97A0EC7BDFAD098DBA /* Alamofire.xcconfig */;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/Alamofire/Alamofire-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/Alamofire/Alamofire-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/Alamofire/Alamofire.modulemap";
+				PRODUCT_MODULE_NAME = Alamofire;
+				PRODUCT_NAME = Alamofire;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.1;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		81E0B337E9ED2F6A7F8CF9B5508BFE70 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = B3B390F0E30AEC6DA5080CBF659DD550 /* SimpleRoundedButton.xcconfig */;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/SimpleRoundedButton/SimpleRoundedButton-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/SimpleRoundedButton/SimpleRoundedButton-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/SimpleRoundedButton/SimpleRoundedButton.modulemap";
+				PRODUCT_MODULE_NAME = SimpleRoundedButton;
+				PRODUCT_NAME = SimpleRoundedButton;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		959DAB4EC1BE4ADE4B22644C3E349521 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
@@ -408,20 +997,23 @@
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
-				MTL_ENABLE_DEBUG_INFO = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE_SPECIFIER = NO_SIGNING/;
 				STRIP_INSTALLED_PRODUCT = NO;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
 				SYMROOT = "${SRCROOT}/../build";
 			};
 			name = Debug;
 		};
-		39A83541402A9E44F41459CEED96F956 /* Debug */ = {
+		D893B0D0C1DCF8A72F2B3F3D86F51799 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = C6D9A2142CD52F2FAE4BBA0238EEDB87 /* Pods-take365-swiftTests.debug.xcconfig */;
+			baseConfigurationReference = 3B0D76B51FB23A97A0EC7BDFAD098DBA /* Alamofire.xcconfig */;
 			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
 				CLANG_ENABLE_OBJC_WEAK = NO;
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
@@ -432,29 +1024,31 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = "Target Support Files/Pods-take365-swiftTests/Info.plist";
+				GCC_PREFIX_HEADER = "Target Support Files/Alamofire/Alamofire-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/Alamofire/Alamofire-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-take365-swiftTests/Pods-take365-swiftTests.modulemap";
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = Pods_take365_swiftTests;
+				MODULEMAP_FILE = "Target Support Files/Alamofire/Alamofire.modulemap";
+				PRODUCT_MODULE_NAME = Alamofire;
+				PRODUCT_NAME = Alamofire;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.1;
 				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
 			};
-			name = Debug;
+			name = Release;
 		};
-		44C0BF381BA3F2180B3E3B58365BE385 /* Release */ = {
+		E0578348A20B5D896D26F5210EAEA1A4 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 830B807FAF25DDA80FF15FCB75687AA4 /* Pods-take365-swiftUITests.release.xcconfig */;
+			baseConfigurationReference = 25799F0B8D648EABB862D897E94160C3 /* Pods-take365-swiftUITests.release.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
 				CLANG_ENABLE_OBJC_WEAK = NO;
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
@@ -465,7 +1059,7 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = "Target Support Files/Pods-take365-swiftUITests/Info.plist";
+				INFOPLIST_FILE = "Target Support Files/Pods-take365-swiftUITests/Pods-take365-swiftUITests-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
@@ -475,7 +1069,7 @@
 				OTHER_LIBTOOLFLAGS = "";
 				PODS_ROOT = "$(SRCROOT)";
 				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = Pods_take365_swiftUITests;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -485,10 +1079,12 @@
 			};
 			name = Release;
 		};
-		779ED735479A6D351EC0A4A894273DC3 /* Debug */ = {
+		E84ED9F90564487E9E37EF2777C4CDB4 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 5B8BFC20DDDFAE6C15DBFD0E8D057093 /* Pods-take365-swift.debug.xcconfig */;
+			baseConfigurationReference = 670605EDA8F34AE415AC2F743CF42565 /* Pods-take365-swiftUITests.debug.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
 				CLANG_ENABLE_OBJC_WEAK = NO;
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
@@ -499,7 +1095,77 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = "Target Support Files/Pods-take365-swift/Info.plist";
+				INFOPLIST_FILE = "Target Support Files/Pods-take365-swiftUITests/Pods-take365-swiftUITests-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-take365-swiftUITests/Pods-take365-swiftUITests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		F5D7F34E5860C9546D55EA2360DEBCE6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3EA446E3D8E78E36207E1AFA788F481C /* Pods-take365-swiftTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-take365-swiftTests/Pods-take365-swiftTests-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-take365-swiftTests/Pods-take365-swiftTests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		FFC0D0DF00F96965031D26FD83C4B667 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1CDDA027D592438663C0ED3A65DA8704 /* Pods-take365-swift.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-take365-swift/Pods-take365-swift-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
@@ -509,132 +1175,7 @@
 				OTHER_LIBTOOLFLAGS = "";
 				PODS_ROOT = "$(SRCROOT)";
 				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = Pods_take365_swift;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
-		};
-		7E44D65A4416AFA64DE1384151F51532 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = D87D96C20334A3A3666706ADF0CEFBDD /* Pods-take365-swiftTests.release.xcconfig */;
-			buildSettings = {
-				CLANG_ENABLE_OBJC_WEAK = NO;
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = "Target Support Files/Pods-take365-swiftTests/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-take365-swiftTests/Pods-take365-swiftTests.modulemap";
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = Pods_take365_swiftTests;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VALIDATE_PRODUCT = YES;
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
-		};
-		CA33F186435244FD0FD5B7325332656C /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_SEARCH_USER_PATHS = NO;
-				CLANG_ANALYZER_NONNULL = YES;
-				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
-				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
-				CLANG_CXX_LIBRARY = "libc++";
-				CLANG_ENABLE_MODULES = YES;
-				CLANG_ENABLE_OBJC_ARC = YES;
-				CLANG_ENABLE_OBJC_WEAK = YES;
-				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
-				CLANG_WARN_BOOL_CONVERSION = YES;
-				CLANG_WARN_COMMA = YES;
-				CLANG_WARN_CONSTANT_CONVERSION = YES;
-				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
-				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
-				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
-				CLANG_WARN_EMPTY_BODY = YES;
-				CLANG_WARN_ENUM_CONVERSION = YES;
-				CLANG_WARN_INFINITE_RECURSION = YES;
-				CLANG_WARN_INT_CONVERSION = YES;
-				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
-				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
-				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
-				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
-				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
-				CLANG_WARN_STRICT_PROTOTYPES = YES;
-				CLANG_WARN_SUSPICIOUS_MOVE = YES;
-				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
-				CLANG_WARN_UNREACHABLE_CODE = YES;
-				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				CODE_SIGNING_REQUIRED = NO;
-				COPY_PHASE_STRIP = NO;
-				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
-				ENABLE_NS_ASSERTIONS = NO;
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_C_LANGUAGE_STANDARD = gnu11;
-				GCC_NO_COMMON_BLOCKS = YES;
-				GCC_PREPROCESSOR_DEFINITIONS = (
-					"POD_CONFIGURATION_RELEASE=1",
-					"$(inherited)",
-				);
-				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
-				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
-				GCC_WARN_UNDECLARED_SELECTOR = YES;
-				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
-				GCC_WARN_UNUSED_FUNCTION = YES;
-				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
-				MTL_ENABLE_DEBUG_INFO = NO;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE_SPECIFIER = NO_SIGNING/;
-				STRIP_INSTALLED_PRODUCT = NO;
-				SYMROOT = "${SRCROOT}/../build";
-			};
-			name = Release;
-		};
-		E16F999C9ACD11B83CC286B83636C5E1 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = B04F66AE95A312C72BCC457D006391ED /* Pods-take365-swiftUITests.debug.xcconfig */;
-			buildSettings = {
-				CLANG_ENABLE_OBJC_WEAK = NO;
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = "Target Support Files/Pods-take365-swiftUITests/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-take365-swiftUITests/Pods-take365-swiftUITests.modulemap";
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = Pods_take365_swiftUITests;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -646,43 +1187,61 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		16D3FB3105D2E0EB3B863F32989F7D95 /* Build configuration list for PBXNativeTarget "Pods-take365-swiftUITests" */ = {
+		4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				E16F999C9ACD11B83CC286B83636C5E1 /* Debug */,
-				44C0BF381BA3F2180B3E3B58365BE385 /* Release */,
+				959DAB4EC1BE4ADE4B22644C3E349521 /* Debug */,
+				2F55A3566E4E4FC936EAEAB624C33C12 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */ = {
+		4F26030D6BD6E42DE84D1C16DA253294 /* Build configuration list for PBXNativeTarget "Pods-take365-swiftUITests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				323A24856F1A4871A780301AF5C02A2A /* Debug */,
-				CA33F186435244FD0FD5B7325332656C /* Release */,
+				E84ED9F90564487E9E37EF2777C4CDB4 /* Debug */,
+				E0578348A20B5D896D26F5210EAEA1A4 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		4C1113D45B4361B8F59F3F4BA0B8AF08 /* Build configuration list for PBXNativeTarget "Pods-take365-swift" */ = {
+		52A4E3BDFAB379D155ED5BB8BB705DF3 /* Build configuration list for PBXNativeTarget "Pods-take365-swiftTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				779ED735479A6D351EC0A4A894273DC3 /* Debug */,
-				0EB74B14AA5AACDC39B17F7E8F2DBD83 /* Release */,
+				F5D7F34E5860C9546D55EA2360DEBCE6 /* Debug */,
+				5D50E7DBB28EB6FA2EC3B2EED73300BA /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		FF8394C19583D2938E17CEB263BE5B3E /* Build configuration list for PBXNativeTarget "Pods-take365-swiftTests" */ = {
+		5B36E0E368966EF9B3081B86B7E3F0FF /* Build configuration list for PBXNativeTarget "Pods-take365-swift" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				39A83541402A9E44F41459CEED96F956 /* Debug */,
-				7E44D65A4416AFA64DE1384151F51532 /* Release */,
+				FFC0D0DF00F96965031D26FD83C4B667 /* Debug */,
+				66CC7D0A9AA177A55C5C4E07E763CEF3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6B2B8EC7E21CDBFF2BDA26B1B4AC4C0D /* Build configuration list for PBXNativeTarget "Alamofire" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				69E08EE3E8E0CB7B39E3A4528BD15E5E /* Debug */,
+				D893B0D0C1DCF8A72F2B3F3D86F51799 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F55D6B9CD080BD8121010774F858ECF9 /* Build configuration list for PBXNativeTarget "SimpleRoundedButton" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				81E0B337E9ED2F6A7F8CF9B5508BFE70 /* Debug */,
+				422E74EF6BDE55F5BDC807F5C9AE6C5B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
-	rootObject = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+	rootObject = BFDFE7DC352907FC980B868725387E98 /* Project object */;
 }

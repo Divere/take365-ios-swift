@@ -1,3 +1,20 @@
-PODFILE CHECKSUM: 2b50cc338fe1c9676264b8e86abe2e791710f55d
+PODS:
+  - Alamofire (5.0.0-rc.3)
+  - SimpleRoundedButton (1.0)
 
-COCOAPODS: 1.4.0
+DEPENDENCIES:
+  - Alamofire (~> 5.0.0-rc.3)
+  - SimpleRoundedButton
+
+SPEC REPOS:
+  trunk:
+    - Alamofire
+    - SimpleRoundedButton
+
+SPEC CHECKSUMS:
+  Alamofire: ca8c0de6906873be89d6deec5c8de279e00bf872
+  SimpleRoundedButton: d7f2be107afb25c56149f4c0df541169ca6af48c
+
+PODFILE CHECKSUM: c585317d13124bfc5e65b9bf81119dd5fdb9f681
+
+COCOAPODS: 1.8.4

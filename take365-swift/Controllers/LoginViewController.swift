@@ -29,4 +29,16 @@ class LoginViewController: Take365ViewController {
 //        btnSignIn.setTitleColor(UIColor.white, for: UIControlState.highlighted)
 //        btnSignIn.setBackgroundImage(UIImage.imageFromColor(btnSignIn.tintColor), for: UIControlState.highlighted)
     }
+
+    @IBAction func btnLoginClicked(_ sender: UIButton) {
+        if(tvLogin.text != nil && !tvLogin.text!.isEmpty && tfPassword.text != nil && !tfPassword.text!.isEmpty) {
+            Take365Api.instance.login(userName: tvLogin.text!, password: tfPassword.text!, success: { (response: LoginResponse) in
+                print("success")
+                print(response)
+            }) { errors in
+                print("failed")
+            }
+        }
+    
+    }
 }

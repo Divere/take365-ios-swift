@@ -8,6 +8,9 @@
 
 /* Begin PBXBuildFile section */
 		4D536A4F205B3233000C8D23 /* UIImage+Color.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D536A4E205B3233000C8D23 /* UIImage+Color.swift */; };
+		4D8F621C2368DB6F003E8F89 /* Take365Api.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D8F621B2368DB6F003E8F89 /* Take365Api.swift */; };
+		4D8F621F2368E3B9003E8F89 /* LoginResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D8F621E2368E3B9003E8F89 /* LoginResponse.swift */; };
+		4D8F62212368EA0A003E8F89 /* BaseResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D8F62202368EA0A003E8F89 /* BaseResponse.swift */; };
 		4DF440E22050485600666471 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DF440E12050485600666471 /* AppDelegate.swift */; };
 		4DF440E42050485600666471 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DF440E32050485600666471 /* ViewController.swift */; };
 		4DF440E92050485600666471 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4DF440E82050485600666471 /* Assets.xcassets */; };
@@ -45,6 +48,9 @@
 		2CDC576267D9CF028D3A38D4 /* Pods-take365-swift.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-take365-swift.release.xcconfig"; path = "Pods/Target Support Files/Pods-take365-swift/Pods-take365-swift.release.xcconfig"; sourceTree = "<group>"; };
 		4897FA982FB812D16EFD0B59 /* Pods-take365-swiftTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-take365-swiftTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-take365-swiftTests/Pods-take365-swiftTests.release.xcconfig"; sourceTree = "<group>"; };
 		4D536A4E205B3233000C8D23 /* UIImage+Color.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImage+Color.swift"; sourceTree = "<group>"; };
+		4D8F621B2368DB6F003E8F89 /* Take365Api.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Take365Api.swift; sourceTree = "<group>"; };
+		4D8F621E2368E3B9003E8F89 /* LoginResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginResponse.swift; sourceTree = "<group>"; };
+		4D8F62202368EA0A003E8F89 /* BaseResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseResponse.swift; sourceTree = "<group>"; };
 		4DF440DE2050485600666471 /* take365-swift.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "take365-swift.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		4DF440E12050485600666471 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		4DF440E32050485600666471 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -110,12 +116,44 @@
 			name = Pods;
 			sourceTree = "<group>";
 		};
+		4D0EC5502368EEA9009031AA /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
 		4D536A4D205B321E000C8D23 /* Components */ = {
 			isa = PBXGroup;
 			children = (
 				4D536A4E205B3233000C8D23 /* UIImage+Color.swift */,
 			);
 			path = Components;
+			sourceTree = "<group>";
+		};
+		4D8F62142368D41D003E8F89 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		4D8F621A2368DB46003E8F89 /* Api */ = {
+			isa = PBXGroup;
+			children = (
+				4D8F621D2368E3AD003E8F89 /* Models */,
+				4D8F621B2368DB6F003E8F89 /* Take365Api.swift */,
+			);
+			path = Api;
+			sourceTree = "<group>";
+		};
+		4D8F621D2368E3AD003E8F89 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				4D8F621E2368E3B9003E8F89 /* LoginResponse.swift */,
+				4D8F62202368EA0A003E8F89 /* BaseResponse.swift */,
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 		4DF440D52050485600666471 = {
@@ -143,6 +181,9 @@
 		4DF440E02050485600666471 /* take365-swift */ = {
 			isa = PBXGroup;
 			children = (
+				4D0EC5502368EEA9009031AA /* Extensions */,
+				4D8F621A2368DB46003E8F89 /* Api */,
+				4D8F62142368D41D003E8F89 /* Views */,
 				4D536A4D205B321E000C8D23 /* Components */,
 				4DF44110205048BE00666471 /* Storyboards */,
 				4DF4410F205048B400666471 /* Controllers */,
@@ -212,8 +253,7 @@
 				4DF440DA2050485600666471 /* Sources */,
 				4DF440DB2050485600666471 /* Frameworks */,
 				4DF440DC2050485600666471 /* Resources */,
-				0FF9C0A8EFEB0E84A4042B91 /* [CP] Embed Pods Frameworks */,
-				9DC22642C0C00B335AC80AA4 /* [CP] Copy Pods Resources */,
+				77C924CFCB248245925F345D /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -232,8 +272,6 @@
 				4DF440EE2050485600666471 /* Sources */,
 				4DF440EF2050485600666471 /* Frameworks */,
 				4DF440F02050485600666471 /* Resources */,
-				3452EF011F69A2B4F851D403 /* [CP] Embed Pods Frameworks */,
-				997BD1315D42086895889471 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -253,8 +291,6 @@
 				4DF440F92050485600666471 /* Sources */,
 				4DF440FA2050485600666471 /* Frameworks */,
 				4DF440FB2050485600666471 /* Resources */,
-				C83F977F22B29B1AA735F4B9 /* [CP] Embed Pods Frameworks */,
-				6B7A3156AFB6676FA9602542 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -273,20 +309,23 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 0920;
-				LastUpgradeCheck = 0920;
+				LastUpgradeCheck = 1110;
 				ORGANIZATIONNAME = "Evgeniy Eliseev";
 				TargetAttributes = {
 					4DF440DD2050485600666471 = {
 						CreatedOnToolsVersion = 9.2;
+						LastSwiftMigration = 1110;
 						ProvisioningStyle = Automatic;
 					};
 					4DF440F12050485600666471 = {
 						CreatedOnToolsVersion = 9.2;
+						LastSwiftMigration = 1110;
 						ProvisioningStyle = Automatic;
 						TestTargetID = 4DF440DD2050485600666471;
 					};
 					4DF440FC2050485600666471 = {
 						CreatedOnToolsVersion = 9.2;
+						LastSwiftMigration = 1110;
 						ProvisioningStyle = Automatic;
 						TestTargetID = 4DF440DD2050485600666471;
 					};
@@ -340,39 +379,6 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		0FF9C0A8EFEB0E84A4042B91 /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-				"${SRCROOT}/Pods/Target Support Files/Pods-take365-swift/Pods-take365-swift-frameworks.sh",
-				"${BUILT_PRODUCTS_DIR}/RSRoundBorderedButton/RSRoundBorderedButton.framework",
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputPaths = (
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RSRoundBorderedButton.framework",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-take365-swift/Pods-take365-swift-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		3452EF011F69A2B4F851D403 /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-take365-swiftTests/Pods-take365-swiftTests-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
 		34981E2AD620E9D1F2925A37 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -427,64 +433,24 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
-		6B7A3156AFB6676FA9602542 /* [CP] Copy Pods Resources */ = {
+		77C924CFCB248245925F345D /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
-			);
-			name = "[CP] Copy Pods Resources";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-take365-swiftUITests/Pods-take365-swiftUITests-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		997BD1315D42086895889471 /* [CP] Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Copy Pods Resources";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-take365-swiftTests/Pods-take365-swiftTests-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		9DC22642C0C00B335AC80AA4 /* [CP] Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Copy Pods Resources";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-take365-swift/Pods-take365-swift-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		C83F977F22B29B1AA735F4B9 /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-take365-swift/Pods-take365-swift-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/SimpleRoundedButton/SimpleRoundedButton.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SimpleRoundedButton.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-take365-swiftUITests/Pods-take365-swiftUITests-frameworks.sh\"\n";
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-take365-swift/Pods-take365-swift-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
@@ -495,10 +461,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				4DF4411820504BBF00666471 /* Take365ViewController.swift in Sources */,
+				4D8F621C2368DB6F003E8F89 /* Take365Api.swift in Sources */,
 				4DF4411620504B0800666471 /* InitialViewController.swift in Sources */,
 				4DF440E42050485600666471 /* ViewController.swift in Sources */,
+				4D8F62212368EA0A003E8F89 /* BaseResponse.swift in Sources */,
 				4DF4411A20504DAF00666471 /* LoginViewController.swift in Sources */,
 				4DF440E22050485600666471 /* AppDelegate.swift in Sources */,
+				4D8F621F2368E3B9003E8F89 /* LoginResponse.swift in Sources */,
 				4D536A4F205B3233000C8D23 /* UIImage+Color.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -549,6 +518,7 @@
 				CLANG_WARN_BOOL_CONVERSION = YES;
 				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
 				CLANG_WARN_EMPTY_BODY = YES;
@@ -556,6 +526,7 @@
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
@@ -606,6 +577,7 @@
 				CLANG_WARN_BOOL_CONVERSION = YES;
 				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
 				CLANG_WARN_EMPTY_BODY = YES;
@@ -613,6 +585,7 @@
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
@@ -647,13 +620,15 @@
 			baseConfigurationReference = B3C7EEA37B830D2016040B0B /* Pods-take365-swift.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 64252YGWN9;
 				INFOPLIST_FILE = "take365-swift/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.take365.take365-swift";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.0;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
@@ -663,13 +638,14 @@
 			baseConfigurationReference = 2CDC576267D9CF028D3A38D4 /* Pods-take365-swift.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 64252YGWN9;
 				INFOPLIST_FILE = "take365-swift/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.take365.take365-swift";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
@@ -680,12 +656,14 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "-";
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 64252YGWN9;
 				INFOPLIST_FILE = "take365-swiftTests/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.take365.take365-swiftTests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/take365-swift.app/take365-swift";
 			};
@@ -697,12 +675,14 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "-";
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 64252YGWN9;
 				INFOPLIST_FILE = "take365-swiftTests/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.take365.take365-swiftTests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/take365-swift.app/take365-swift";
 			};
@@ -713,12 +693,14 @@
 			baseConfigurationReference = F604F43D5A7B33A3640BFBDE /* Pods-take365-swiftUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "-";
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 64252YGWN9;
 				INFOPLIST_FILE = "take365-swiftUITests/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.take365.take365-swiftUITests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_TARGET_NAME = "take365-swift";
 			};
@@ -729,12 +711,14 @@
 			baseConfigurationReference = A0A3C43AA65444AFCA4FA4A0 /* Pods-take365-swiftUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "-";
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 64252YGWN9;
 				INFOPLIST_FILE = "take365-swiftUITests/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.take365.take365-swiftUITests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_TARGET_NAME = "take365-swift";
 			};

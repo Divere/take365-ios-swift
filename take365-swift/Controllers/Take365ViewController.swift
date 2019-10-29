@@ -17,14 +17,14 @@ class Take365ViewController: UIViewController {
     override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)
         
-        let properties = Mirror(reflecting: self).children.flatMap { $0 }
+        let properties = Mirror(reflecting: self).children.compactMap { $0 }
         for prop in properties {
             if(prop.value is UITextField) {
                 let tf = prop.value as! UITextField
                 applyBorderLessStyle(tf: tf, color: UIColor.black)
                 tf.delegate = self
                 maTextFields.add(tf)
-                tf.addTarget(self, action: #selector(self.textFieldDidChanged(_:)), for: UIControlEvents.editingChanged)
+                tf.addTarget(self, action: #selector(self.textFieldDidChanged(_:)), for: UIControl.Event.editingChanged)
             }
         }
     }
@@ -102,9 +102,9 @@ extension Take365ViewController: UITextFieldDelegate {
         }
         
         if text.count == 0 {
-            textField.clearButtonMode = UITextFieldViewMode.never
+            textField.clearButtonMode = UITextField.ViewMode.never
         } else {
-            textField.clearButtonMode = UITextFieldViewMode.always
+            textField.clearButtonMode = UITextField.ViewMode.always
         }
     }
 }
