@@ -20,10 +20,19 @@ class StoriesListViewController: Take365ViewController {
         tableView?.delegate = self
         tableView?.tableFooterView = UIView(frame: CGRect.zero)
         title = "Мои истории"
-    
+        navigationController?.navigationBar.tintColor = UIColor.red
         
         navigationItem.rightBarButtonItem = UIBarButtonItem(barButtonSystemItem: UIBarButtonItem.SystemItem.compose, target: self, action: #selector(newStory))
         
+    }
+    
+    override func viewDidAppear(_ animated: Bool) {
+        Take365Api.instance.getStoryList(success: { (storyList) in
+            self.stories = storyList.result
+            self.tableView?.reloadData()
+        }) { (error) in
+            self.showAlert(title: "Ошибка загрузки историй", message: error!.value!)
+        }
     }
     
     @objc func newStory() {
@@ -33,10 +42,31 @@ class StoriesListViewController: Take365ViewController {
 
 extension StoriesListViewController: UITableViewDataSource {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 0
+        return stories?.count ?? 0
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        
+        switch true {
+        case stories != nil && stories!.count < 1:
+            return tableView.dequeueReusableCell(withIdentifier: "CreateNewStoryCell")!
+        case stories != nil && stories!.count >= 1:
+            let model = stories![indexPath.row]
+            let cell = tableView.dequeueReusableCell(withIdentifier: "StoryCell") as! StoryCell
+            cell.lblStoryName!.text = model.title ?? "Без названия"
+            cell.lblCompleted!.text = "\(model.progress.totalImages) из \(model.progress.totalDays) (\(model.progress.percentsComplete)%)"
+            if(model.progress.percentsComplete == "100") {
+                cell.lblCompleted?.textColor = UIColor.green
+            }
+            return cell
+        default:
+            let cell = tableView.dequeueReusableCell(withIdentifier: "LoadingStoriesCell")!
+            cell.backgroundColor = UIColor.clear
+            cell.backgroundView = UIView()
+            cell.selectedBackgroundView = UIView()
+            return cell
+        }
+        
         return UITableViewCell()
     }
     
@@ -44,5 +74,7 @@ extension StoriesListViewController: UITableViewDataSource {
 }
 
 extension StoriesListViewController: UITableViewDelegate {
-    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        
+    }
 }

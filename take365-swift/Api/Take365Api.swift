@@ -39,7 +39,7 @@ class Take365Api {
         return try! decoder.decode(BaseResponse.self, from: data)
     }
     
-    private func handleBaseResponse(_ responseData: Data?, next: @escaping (BaseResponse.Error?) -> Void) {
+    private func onErrorResponse(_ responseData: Data?, error: AFError, next: @escaping (BaseResponse.Error?) -> Void) {
         if(responseData == nil) {
             next(nil)
             return
@@ -58,16 +58,20 @@ class Take365Api {
                 break
             default: break
             }
+        } else {
+            print(String(bytes: responseData!, encoding: String.Encoding.utf8))
+            print(error)
+            next(BaseResponse.Error(code: "", value: "Unrecoverable error. Please wait while developer will fix it.", field: ""))
         }
     }
     
     fileprivate func handleLoginResponse(_ response: DataResponse<LoginResponse, AFError>, success: @escaping (LoginResponse) -> Void, failed: @escaping (BaseResponse.Error?) -> Void) {
         switch(response.result){
-        case .success:
-            success(response.value!)
+        case .success(let value):
+            success(value)
             break
-        case .failure:
-            self.handleBaseResponse(response.data, next: failed)
+        case .failure(let error):
+            self.onErrorResponse(response.data, error: error, next: failed)
             break
         }
     }
@@ -77,9 +81,9 @@ class Take365Api {
     }
     
     func login(accessToken: String, success: @escaping (LoginResponse) -> Void, failed: @escaping (BaseResponse.Error?) -> Void) {
-        AF.request(m("auth/reuse-token"), method: .post, parameters: ["accessToken": accessToken]).responseDecodable(of: LoginResponse.self, decoder: decoder, completionHandler: { response in
+        AF.request(m("auth/reuse-token"), method: .post, parameters: ["accessToken": accessToken]).responseDecodable(of: LoginResponse.self) { response in
             self.handleLoginResponse(response, success: success, failed: failed)
-        })
+        }
     }
     
     func login(userName: String, password: String, success: @escaping (LoginResponse) -> Void, failed: @escaping (BaseResponse.Error?) -> Void) {
@@ -93,5 +97,17 @@ class Take365Api {
         }.validate(statusCode: 200..<300)
     }
     
-    
+    func getStoryList(success: @escaping (StoryListResponse) -> Void, failed: @escaping (BaseResponse.Error?) -> Void) {
+        let accessToken = UserDefaults.standard.string(forKey: "accessToken")
+        AF.request(m("story/list?accessToken=\(accessToken!)&username=me&maxItems=100"), method: .get).responseDecodable(of: StoryListResponse.self) { response in
+            switch(response.result) {
+            case .success(let value):
+                success(value)
+                break
+            case .failure(let error):
+                self.onErrorResponse(response.data, error: error, next: failed)
+                break
+            }
+        }
+    }
 }
