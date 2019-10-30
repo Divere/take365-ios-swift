@@ -8,10 +8,11 @@
 
 import Foundation
 import UIKit
+import JVFloatLabeledTextField
 
 class LoginViewController: Take365ViewController {
-    @IBOutlet weak var tvLogin: UITextField!
-    @IBOutlet weak var tfPassword: UITextField!
+    @IBOutlet weak var tfLogin: JVFloatLabeledTextField!
+    @IBOutlet weak var tfPassword: JVFloatLabeledTextField!
     @IBOutlet weak var swRemember: UISwitch!
     @IBOutlet weak var btnSignIn: UIButton!
     @IBOutlet weak var btnRegister: UIButton!
@@ -20,25 +21,22 @@ class LoginViewController: Take365ViewController {
         super.viewDidLoad()
         self.navigationController?.setNavigationBarHidden(true, animated: false)
         
-//        btnSignIn.layer.borderWidth = 1.0
-//        btnSignIn.layer.borderColor = btnSignIn.tintColor.cgColor
-//        btnSignIn.layer.cornerRadius = 5.0
-//        btnSignIn.clipsToBounds = true
-//        btnSignIn.contentEdgeInsets = UIEdgeInsets(top: 8, left: 8, bottom: 8, right: 8)
-//        btnSignIn.setTitleColor(btnSignIn.tintColor, for: UIControlState.normal)
-//        btnSignIn.setTitleColor(UIColor.white, for: UIControlState.highlighted)
-//        btnSignIn.setBackgroundImage(UIImage.imageFromColor(btnSignIn.tintColor), for: UIControlState.highlighted)
+    
+        tfLogin.floatingLabelFont = UIFont.boldSystemFont(ofSize: 14)
+        tfPassword.floatingLabelFont = UIFont.boldSystemFont(ofSize: 14)
     }
 
     @IBAction func btnLoginClicked(_ sender: UIButton) {
-        if(tvLogin.text != nil && !tvLogin.text!.isEmpty && tfPassword.text != nil && !tfPassword.text!.isEmpty) {
-            Take365Api.instance.login(userName: tvLogin.text!, password: tfPassword.text!, success: { (response: LoginResponse) in
-                print("success")
-                print(response)
-            }) { errors in
-                print("failed")
+        self.dismissKeyboard()
+        
+        if(tfLogin.text != nil && !tfLogin.text!.isEmpty && tfPassword.text != nil && !tfPassword.text!.isEmpty) {
+            Take365Api.instance.login(userName: tfLogin.text!, password: tfPassword.text!, success: { (response: LoginResponse) in
+                UserDefaults.standard.set(response.result!.token, forKey: "accessToken")
+                UserDefaults.standard.synchronize()
+                self.performSegue(withIdentifier: "SEGUE_LOGIN_COMPLETED", sender: self)
+            }) { error in
+                self.showAlert(title: "Ошибка входа", message: error!.value!)
             }
         }
-    
     }
 }

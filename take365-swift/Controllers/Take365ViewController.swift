@@ -14,6 +14,16 @@ class Take365ViewController: UIViewController {
     let maTextFields = NSMutableArray()
     var currentMovement: CGFloat = 0
     
+    override func viewDidLoad() {
+        Take365Api.instance.onInvalidAccessToken = {
+            UserDefaults.standard.removeObject(forKey: "accessToken")
+            UserDefaults.standard.synchronize()
+            
+            let loginController = self.storyboard!.instantiateViewController(withIdentifier: "login")
+            self.present(loginController, animated: true, completion: nil)
+        }
+    }
+    
     override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)
         

@@ -8,10 +8,10 @@
 
 import Foundation
 
-class LoginResponse: BaseResponse {
+class LoginResponse: Codable {
     var result: Result?
     
-    class Result: Decodable {
+    class Result: Codable {
         var id: Int
         var token: String
         var tokenExpires: Int64

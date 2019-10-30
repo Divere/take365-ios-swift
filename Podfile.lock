@@ -1,20 +1,24 @@
 PODS:
   - Alamofire (5.0.0-rc.3)
+  - JVFloatLabeledTextField (1.2.2)
   - SimpleRoundedButton (1.0)
 
 DEPENDENCIES:
   - Alamofire (~> 5.0.0-rc.3)
+  - JVFloatLabeledTextField
   - SimpleRoundedButton
 
 SPEC REPOS:
   trunk:
     - Alamofire
+    - JVFloatLabeledTextField
     - SimpleRoundedButton
 
 SPEC CHECKSUMS:
   Alamofire: ca8c0de6906873be89d6deec5c8de279e00bf872
+  JVFloatLabeledTextField: df48598472ee015701d509f43e59492a0d4ca208
   SimpleRoundedButton: d7f2be107afb25c56149f4c0df541169ca6af48c
 
-PODFILE CHECKSUM: c585317d13124bfc5e65b9bf81119dd5fdb9f681
+PODFILE CHECKSUM: b6e91d287dcf2ccde9db869c1889c897db311d5a
 
 COCOAPODS: 1.8.4

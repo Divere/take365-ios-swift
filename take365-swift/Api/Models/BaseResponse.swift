@@ -8,12 +8,13 @@
 
 import Foundation
 
-class BaseResponse: Decodable {
+class BaseResponse: Codable {
     
     var errors: [Error]?
     
-    class Error: Decodable {
-        var value: String
-        var field: String
+    struct Error: Codable {
+        var code: String?
+        var value: String?
+        var field: String?
     }
 }
