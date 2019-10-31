@@ -15,11 +15,13 @@ class FeedViewController: UITableViewController {
     var feedItems: [FeedItem]?
     
     override func viewDidLoad() {
-        self.tableView.rowHeight = UITableView.automaticDimension;
-        self.tableView.estimatedRowHeight = 44.0;
+        super.viewDidLoad()
+        tableView.rowHeight = UITableView.automaticDimension
+        tableView.estimatedRowHeight = 44.0
     }
     
     override func viewDidAppear(_ animated: Bool) {
+        super.viewDidAppear(animated)
         Take365Api.instance.getFeed(success: { (response) in
             self.feedItems = response.result.list
             self.tableView.reloadData()
@@ -39,10 +41,26 @@ class FeedViewController: UITableViewController {
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "FeedCell") as! FeedCell
         
-        cell.ivImage.kf.setImage(with: URL(string: feedItems![indexPath.row].thumbLarge.url))
-        cell.setNeedsUpdateConstraints()
-        cell.updateConstraintsIfNeeded()
+        guard let url = URL(string: feedItems![indexPath.row].thumbLarge.url) else {
+            return FeedCell()
+        }
         
+        let resource = ImageResource(downloadURL: url, cacheKey: url.absoluteString)
+        
+        cell.ivImage.kf.setImage(
+            with: resource,
+            options: [
+                .scaleFactor(UIScreen.main.scale),
+                .cacheOriginalImage
+            ])
+        { result in
+            cell.setNeedsLayout()
+            
+            UIView.performWithoutAnimation {
+                tableView.beginUpdates()
+                tableView.endUpdates()
+            }
+        }
         return cell
     }
     
