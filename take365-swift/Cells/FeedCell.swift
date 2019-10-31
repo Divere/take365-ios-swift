@@ -13,4 +13,9 @@ class FeedCell: UITableViewCell {
     
     @IBOutlet weak var ivImage: UIImageView!
     
+    override func prepareForReuse() {
+        super.prepareForReuse()
+        ivImage.kf.cancelDownloadTask()
+        ivImage.image = nil
+    }
 }
