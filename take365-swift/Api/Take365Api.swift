@@ -21,9 +21,10 @@ class Take365Api {
         }
     }
     
-    private let base = "https://take365.org/api/"
+    private let base = "https://take365.vasa.tech/api/"
     
     private var decoder: JSONDecoder
+    private var aaf = AAF()
     
     var onInvalidAccessToken: (() -> Void)? = nil
     
@@ -52,6 +53,7 @@ class Take365Api {
                 return
             }
             
+            print(code)
             switch code {
             case "AUTH_BAD_TOKEN":
                 onInvalidAccessToken?()
@@ -76,12 +78,25 @@ class Take365Api {
         }
     }
     
+    func resetAccessToken() {
+        aaf.headers.remove(name: "accessToken")
+    }
+    
+    func setAccessToken(accessToken: String) {
+        aaf.headers.remove(name: "accessToken")
+        aaf.headers.add(name: "Authorization", value: "Bearer \(accessToken)")
+    }
+    
+    private func getAccessToken() -> String? {
+        return UserDefaults.standard.string(forKey: "accessToken")
+    }
+    
     func register(userName: String, email: String, password: String) {
-        AF.request(m("user/register"), method: .post)
+        aaf.request(m("user/register"), method: .post)
     }
     
     func login(accessToken: String, success: @escaping (LoginResponse) -> Void, failed: @escaping (BaseResponse.Error?) -> Void) {
-        AF.request(m("auth/reuse-token"), method: .post, parameters: ["accessToken": accessToken]).responseDecodable(of: LoginResponse.self) { response in
+        aaf.request(m("auth/reuse-token"), method: .post, parameters: ["accessToken": accessToken]).responseDecodable(of: LoginResponse.self) { response in
             self.handleLoginResponse(response, success: success, failed: failed)
         }
     }
@@ -92,14 +107,13 @@ class Take365Api {
             "password": password
         ]
         
-        AF.request(m("auth/login"), method: .post, parameters: params).responseDecodable { (response: DataResponse<LoginResponse, AFError>) in
+        aaf.request(m("auth/login"), method: .post, parameters: params).responseDecodable { (response: DataResponse<LoginResponse, AFError>) in
             self.handleLoginResponse(response, success: success, failed: failed)
-        }.validate(statusCode: 200..<300)
+        }
     }
     
     func getStoryList(success: @escaping (StoryListResponse) -> Void, failed: @escaping (BaseResponse.Error?) -> Void) {
-        let accessToken = UserDefaults.standard.string(forKey: "accessToken")
-        AF.request(m("story/list?accessToken=\(accessToken!)&username=me&maxItems=100"), method: .get).responseDecodable(of: StoryListResponse.self) { response in
+        aaf.request(m("story/list?username=me&maxItems=100"), method: .get).responseDecodable(of: StoryListResponse.self) { response in
             switch(response.result) {
             case .success(let value):
                 success(value)
@@ -110,4 +124,31 @@ class Take365Api {
             }
         }
     }
+    
+    func getFeed(success: @escaping (GetFeedResponse) -> Void, failed: @escaping (BaseResponse.Error?) -> Void) {
+        aaf.request(m("feed/feed"), method: .get).responseDecodable(of: GetFeedResponse.self) { response in
+            switch(response.result) {
+            case .success(let value):
+                success(value)
+                break
+            case .failure(let error):
+                self.onErrorResponse(response.data, error: error, next: failed)
+                break
+            }
+        }
+    }
+    
+    class AAF {
+        var headers = HTTPHeaders()
+        
+        func request(_ url: URLConvertible,
+        method: HTTPMethod = .get,
+        parameters: Parameters? = nil,
+        interceptor: RequestInterceptor? = nil) -> DataRequest {
+            return AF.request(url, method: method, parameters: parameters, headers: self.headers, interceptor: interceptor)
+                .validate(statusCode: 200..<300)
+        }
+    }
+    
+    
 }

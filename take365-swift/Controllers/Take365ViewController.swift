@@ -16,6 +16,7 @@ class Take365ViewController: UIViewController {
     
     override func viewDidLoad() {
         Take365Api.instance.onInvalidAccessToken = {
+            Take365Api.instance.resetAccessToken()
             UserDefaults.standard.removeObject(forKey: "accessToken")
             UserDefaults.standard.synchronize()
             

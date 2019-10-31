@@ -10,6 +10,7 @@ target 'take365-swift' do
   pod "SimpleRoundedButton"
   pod 'Alamofire', '~> 5.0.0-rc.3'
   pod 'JVFloatLabeledTextField'
+  pod 'Kingfisher', '~> 5.9'
 
   target 'take365-swiftTests' do
     inherit! :search_paths

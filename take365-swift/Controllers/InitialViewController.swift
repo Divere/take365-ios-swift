@@ -11,9 +11,10 @@ import UIKit
 
 class InitialViewController: Take365ViewController {
     override func viewDidAppear(_ animated: Bool) {
-        let accessToken = UserDefaults.standard.object(forKey: "accessToken") as? String
+        var accessToken = UserDefaults.standard.object(forKey: "accessToken") as? String
         if(accessToken != nil) {
             Take365Api.instance.login(accessToken: accessToken!, success: { (response: LoginResponse) in
+                Take365Api.instance.setAccessToken(accessToken: accessToken!)
                 self.performSegue(withIdentifier: "AUTOLOGIN_COMPLETED", sender:self);
             }) { (error: BaseResponse.Error?) in
                 self.performSegue(withIdentifier: "AUTOLOGIN_FAILED", sender: self)

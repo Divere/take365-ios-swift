@@ -35,10 +35,4 @@ class StoryModel: Codable {
         var dateStart: String
         var dateEnd: String
     }
-    
-    class StoryImageThumbModel: Codable {
-        var height: Int
-        var width: Int
-        var url: String
-    }
 }

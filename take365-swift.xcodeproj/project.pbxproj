@@ -18,6 +18,11 @@
 		4D8F621C2368DB6F003E8F89 /* Take365Api.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D8F621B2368DB6F003E8F89 /* Take365Api.swift */; };
 		4D8F621F2368E3B9003E8F89 /* LoginResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D8F621E2368E3B9003E8F89 /* LoginResponse.swift */; };
 		4D8F62212368EA0A003E8F89 /* BaseResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D8F62202368EA0A003E8F89 /* BaseResponse.swift */; };
+		4DB44F9C236A230E00C0CF75 /* FeedItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DB44F9B236A230E00C0CF75 /* FeedItem.swift */; };
+		4DB44F9E236A236400C0CF75 /* StoryImageThumbModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DB44F9D236A236400C0CF75 /* StoryImageThumbModel.swift */; };
+		4DB44FA0236A24C000C0CF75 /* GetFeedResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DB44F9F236A24C000C0CF75 /* GetFeedResponse.swift */; };
+		4DB44FA2236A3AF600C0CF75 /* FeedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DB44FA1236A3AF600C0CF75 /* FeedViewController.swift */; };
+		4DB44FA4236A485F00C0CF75 /* FeedCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DB44FA3236A485F00C0CF75 /* FeedCell.swift */; };
 		4DF440E22050485600666471 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DF440E12050485600666471 /* AppDelegate.swift */; };
 		4DF440E42050485600666471 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DF440E32050485600666471 /* ViewController.swift */; };
 		4DF440E92050485600666471 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4DF440E82050485600666471 /* Assets.xcassets */; };
@@ -65,6 +70,11 @@
 		4D8F621B2368DB6F003E8F89 /* Take365Api.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Take365Api.swift; sourceTree = "<group>"; };
 		4D8F621E2368E3B9003E8F89 /* LoginResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginResponse.swift; sourceTree = "<group>"; };
 		4D8F62202368EA0A003E8F89 /* BaseResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseResponse.swift; sourceTree = "<group>"; };
+		4DB44F9B236A230E00C0CF75 /* FeedItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedItem.swift; sourceTree = "<group>"; };
+		4DB44F9D236A236400C0CF75 /* StoryImageThumbModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoryImageThumbModel.swift; sourceTree = "<group>"; };
+		4DB44F9F236A24C000C0CF75 /* GetFeedResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetFeedResponse.swift; sourceTree = "<group>"; };
+		4DB44FA1236A3AF600C0CF75 /* FeedViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedViewController.swift; sourceTree = "<group>"; };
+		4DB44FA3236A485F00C0CF75 /* FeedCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedCell.swift; sourceTree = "<group>"; };
 		4DF440DE2050485600666471 /* take365-swift.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "take365-swift.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		4DF440E12050485600666471 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		4DF440E32050485600666471 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -142,6 +152,7 @@
 			isa = PBXGroup;
 			children = (
 				4D0EC56023691F1E009031AA /* StoryCell.swift */,
+				4DB44FA3236A485F00C0CF75 /* FeedCell.swift */,
 			);
 			path = Cells;
 			sourceTree = "<group>";
@@ -177,6 +188,9 @@
 				4D8F62202368EA0A003E8F89 /* BaseResponse.swift */,
 				4D0EC55523690B66009031AA /* StoryModel.swift */,
 				4D0EC55B236916E5009031AA /* StoryListResponse.swift */,
+				4DB44F9B236A230E00C0CF75 /* FeedItem.swift */,
+				4DB44F9D236A236400C0CF75 /* StoryImageThumbModel.swift */,
+				4DB44F9F236A24C000C0CF75 /* GetFeedResponse.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -248,6 +262,7 @@
 				4D0EC55323690A6B009031AA /* StoriesListViewController.swift */,
 				4D0EC557236911FF009031AA /* MoreViewController.swift */,
 				4D0EC559236914A8009031AA /* CreateStoryViewController.swift */,
+				4DB44FA1236A3AF600C0CF75 /* FeedViewController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -471,12 +486,14 @@
 				"${PODS_ROOT}/Target Support Files/Pods-take365-swift/Pods-take365-swift-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
 				"${BUILT_PRODUCTS_DIR}/JVFloatLabeledTextField/JVFloatLabeledTextField.framework",
+				"${BUILT_PRODUCTS_DIR}/Kingfisher/Kingfisher.framework",
 				"${BUILT_PRODUCTS_DIR}/SimpleRoundedButton/SimpleRoundedButton.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/JVFloatLabeledTextField.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Kingfisher.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SimpleRoundedButton.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -494,13 +511,18 @@
 				4DF4411820504BBF00666471 /* Take365ViewController.swift in Sources */,
 				4D0EC558236911FF009031AA /* MoreViewController.swift in Sources */,
 				4D8F621C2368DB6F003E8F89 /* Take365Api.swift in Sources */,
+				4DB44F9C236A230E00C0CF75 /* FeedItem.swift in Sources */,
 				4D0EC55423690A6B009031AA /* StoriesListViewController.swift in Sources */,
 				4D0EC55A236914A8009031AA /* CreateStoryViewController.swift in Sources */,
 				4D0EC56123691F1E009031AA /* StoryCell.swift in Sources */,
+				4DB44FA2236A3AF600C0CF75 /* FeedViewController.swift in Sources */,
 				4DF4411620504B0800666471 /* InitialViewController.swift in Sources */,
+				4DB44F9E236A236400C0CF75 /* StoryImageThumbModel.swift in Sources */,
 				4D0EC55C236916E5009031AA /* StoryListResponse.swift in Sources */,
+				4DB44FA0236A24C000C0CF75 /* GetFeedResponse.swift in Sources */,
 				4DF440E42050485600666471 /* ViewController.swift in Sources */,
 				4D0EC55623690B66009031AA /* StoryModel.swift in Sources */,
+				4DB44FA4236A485F00C0CF75 /* FeedCell.swift in Sources */,
 				4D0EC5522369028B009031AA /* UIViewController.swift in Sources */,
 				4D8F62212368EA0A003E8F89 /* BaseResponse.swift in Sources */,
 				4DF4411A20504DAF00666471 /* LoginViewController.swift in Sources */,

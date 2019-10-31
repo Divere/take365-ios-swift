@@ -16,6 +16,7 @@ class LoginViewController: Take365ViewController {
     @IBOutlet weak var swRemember: UISwitch!
     @IBOutlet weak var btnSignIn: UIButton!
     @IBOutlet weak var btnRegister: UIButton!
+    @IBOutlet weak var activityIndicator: UIActivityIndicatorView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -30,11 +31,16 @@ class LoginViewController: Take365ViewController {
         self.dismissKeyboard()
         
         if(tfLogin.text != nil && !tfLogin.text!.isEmpty && tfPassword.text != nil && !tfPassword.text!.isEmpty) {
+            activityIndicator.isHidden = false
+            btnSignIn.isEnabled = false
             Take365Api.instance.login(userName: tfLogin.text!, password: tfPassword.text!, success: { (response: LoginResponse) in
                 UserDefaults.standard.set(response.result!.token, forKey: "accessToken")
                 UserDefaults.standard.synchronize()
+                Take365Api.instance.setAccessToken(accessToken: response.result!.token)
                 self.performSegue(withIdentifier: "SEGUE_LOGIN_COMPLETED", sender: self)
             }) { error in
+                self.btnSignIn.isEnabled = true
+                self.activityIndicator.isHidden = true
                 self.showAlert(title: "Ошибка входа", message: error!.value!)
             }
         }

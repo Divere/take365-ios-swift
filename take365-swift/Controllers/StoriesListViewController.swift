@@ -10,7 +10,9 @@ import Foundation
 import UIKit
 
 class StoriesListViewController: Take365ViewController {
+    
     @IBOutlet var tableView: UITableView?
+    var refreshControl: UIRefreshControl?
     
     var stories: [StoryModel]?
     var selectedStory: StoryModel?
@@ -24,19 +26,28 @@ class StoriesListViewController: Take365ViewController {
         
         navigationItem.rightBarButtonItem = UIBarButtonItem(barButtonSystemItem: UIBarButtonItem.SystemItem.compose, target: self, action: #selector(newStory))
         
+        refreshControl = UIRefreshControl()
+        tableView?.refreshControl = refreshControl
+        refreshControl?.addTarget(self, action: #selector(refreshStories), for: .valueChanged)
     }
     
     override func viewDidAppear(_ animated: Bool) {
-        Take365Api.instance.getStoryList(success: { (storyList) in
-            self.stories = storyList.result
-            self.tableView?.reloadData()
-        }) { (error) in
-            self.showAlert(title: "Ошибка загрузки историй", message: error!.value!)
-        }
+        refreshStories()
     }
     
     @objc func newStory() {
         self.performSegue(withIdentifier: "SEGUE_CREATE_STORY", sender: self)
+    }
+    
+    @objc func refreshStories() {
+        Take365Api.instance.getStoryList(success: { (storyList) in
+            self.stories = storyList.result
+            self.tableView?.reloadData()
+            self.refreshControl?.endRefreshing()
+        }) { (error) in
+            self.showAlert(title: "Ошибка загрузки историй", message: error!.value!)
+            self.refreshControl?.endRefreshing()
+        }
     }
 }
 
@@ -66,8 +77,6 @@ extension StoriesListViewController: UITableViewDataSource {
             cell.selectedBackgroundView = UIView()
             return cell
         }
-        
-        return UITableViewCell()
     }
     
     
